@@ -1138,9 +1138,9 @@ h6 {
   width: 100%;
 }
 
-.wrap-image picture picture,
+.wrap-image picture source,
 .wrap-image picture img,
-.wrap-image.loaded picture,
+.wrap-image.loaded source,
 .wrap-image.loaded img {
   opacity: 1;
 }
@@ -1150,8 +1150,9 @@ h6 {
   opacity: 0;
 }
 
-.wrap-image picture,
+.wrap-image picture source,
 .wrap-image img {
+  opacity: 0;
   transition: all 0.3s ease 0.3s;
 }
 
@@ -1759,6 +1760,19 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .massage-today {
   padding-bottom: 10px;
   padding-top: 10px;
+  position: relative;
+}
+
+.massage-today .n_container {
+  position: relative;
+}
+
+.massage-today__decoration {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: -50%;
+  z-index: -1;
 }
 
 .massage-today.no-blur .massage-today__blockImaage img {
@@ -1832,6 +1846,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
   top: 0;
   width: 100%;
   z-index: -1;
+}
+
+.erotic-massage-in-prague__items {
+  display: flex;
+}
+
+.erotic-massage-in-prague__item:nth-child(1) {
+  min-height: 500px;
 }
 
 .erotic-massage-in-prague__blockImages {
@@ -2275,30 +2297,16 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-top: 27px;
   }
 
-  .massage-today__wrap-title {
-    padding-right: 20px;
+  .massage-today__items {
+    margin-left: -11px;
+    margin-right: -11px;
   }
 
   .massage-today__item {
     margin-bottom: 50px;
+    margin-left: 11px;
+    margin-right: 11px;
     width: calc(25% - 22px);
-  }
-
-  .erotic-massage-in-prague__items {
-    display: flex;
-  }
-
-  .erotic-massage-in-prague__item:nth-child(1) {
-    width: 440px;
-  }
-
-  .erotic-massage-in-prague__item:nth-child(2) {
-    padding-left: 52px;
-    width: calc(100% - 440px);
-  }
-
-  .erotic-massage-in-prague__title {
-    margin-top: -18px;
   }
 
   .faq__items {
@@ -2312,6 +2320,17 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-left: 42.5px;
     margin-right: 42.5px;
     width: calc(50% - 85px);
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .erotic-massage-in-prague__item:nth-child(1) {
+    width: 440px;
+  }
+
+  .erotic-massage-in-prague__item:nth-child(2) {
+    padding-left: 35px;
+    width: calc(100% - 440px);
   }
 }
 
@@ -2366,6 +2385,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .erotic-massage-in-prague::after {
     background: url("../images/svg/erotic-massage-in-prague-overlay.svg");
     background-size: cover;
+  }
+
+  .erotic-massage-in-prague__item:nth-child(2) {
+    padding-left: 52px;
+  }
+
+  .erotic-massage-in-prague__title {
+    margin-top: -18px;
   }
 
   .egoist-massage__bg::after {
@@ -2611,6 +2638,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 @media (max-width: 1220px) {
   .massage-today__blockImaage {
     height: calc(240px + 148.18 * ((100vw - 320px) / 900));
+  }
+
+  .erotic-massage-in-prague__item:nth-child(1) {
+    min-height: calc(325px + 175 * ((100vw - 320px) / 900));
   }
 
   .footer__items {
@@ -3095,6 +3126,24 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
+@media screen and (max-width: 960.98px) {
+  .erotic-massage-in-prague__items {
+    flex-direction: column;
+  }
+
+  .erotic-massage-in-prague__item:nth-child(1) {
+    height: 1260px;
+    order: 1;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 960.98px) and (max-width: 1220px) {
+  .erotic-massage-in-prague__item:nth-child(1) {
+    height: calc(325px + 935 * ((100vw - 320px) / 900));
+  }
+}
+
 @media screen and (max-width: 800.98px) {
   .block__BlockText {
     padding-bottom: 15px;
@@ -3274,6 +3323,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-bottom: 50px;
     padding-top: 10px;
     margin-top: 0;
+  }
+
+  .erotic-massage-in-prague__item:nth-child(1) {
+    order: 1;
+    margin-top: 25px;
   }
 
   .erotic-massage-in-prague__blockText {
