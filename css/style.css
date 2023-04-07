@@ -1405,6 +1405,7 @@ a {
 }
 
 .header__top {
+  background-color: #0A0A0A;
   height: 116px;
 }
 
@@ -1598,31 +1599,144 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 /* Page - Home */
 
-/*
-.section__items {
-
-   @include media-min-992 {
-      display: flex;
-      margin-left: -20px;
-      margin-right: -20px;
-   }
-}
-.section__item {
-
-   @include media-min-992 {
-      margin-left: 20px;
-      margin-right: 20px;
-      width: calc(50% - 40px);
-   }
-}
-*/
-
 .first-screen {
-  margin-top: 170px;
+  margin-top: 233px;
+  position: relative;
+}
+
+.first-screen__bg-blur {
+  max-width: 60%;
+  position: absolute;
+  left: 0;
+  top: -118px;
+  z-index: -1;
+}
+
+.first-screen__illustration {
+  max-width: 30%;
+  position: absolute;
+  left: 0;
+  top: -118px;
+  z-index: 0;
 }
 
 .first-screen .n_container {
   position: relative;
+}
+
+.first-screen__title {
+  font-family: Oswald, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  margin: 0 0 10px;
+}
+
+.first-screen__sub-title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.first-screen__blockText {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.first-screen__blockText p {
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.first-screen__wrap-buttons {
+  display: flex;
+  margin-top: 19px;
+}
+
+.first-screen__wrap-buttons a {
+  width: 190px;
+  max-width: 100%;
+}
+
+.first-screen__wrap-buttons a:first-child {
+  margin-right: 15px;
+}
+
+.first-screen__wrap-slider {
+  position: relative;
+  margin-top: 32px;
+}
+
+.first-screen__wrap-slider .block-lazy-load {
+  transition: opacity 0.3s ease 0.1s;
+}
+
+.first-screen__wrap-slider .block-lazy-load.lazy-load-slider {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.first-screen__sliders {
+  overflow: hidden;
+}
+
+.first-screen__sliders .swiper-slide {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 364px;
+  position: relative;
+}
+
+.first-screen__slider-wrap-name,
+.first-screen__slider-btn {
+  position: absolute;
+  z-index: 2;
+}
+
+.first-screen__slider-wrap-name {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.47);
+  left: 0;
+  display: flex;
+  justify-content: center;
+  height: 43px;
+  right: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+.first-screen__slider-btn {
+  bottom: 11%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 150px;
+}
+
+.first-screen__button-prev,
+.first-screen__button-next {
+  height: 41px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  min-width: 41px;
+  max-width: 41px;
+  z-index: 2;
+}
+
+.first-screen__button-prev svg,
+.first-screen__button-next svg {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.first-screen__button-prev {
+  left: -20px;
+}
+
+.first-screen__button-next {
+  right: -20px;
 }
 
 .events-for-erotic-massages__wrap-container {
@@ -1718,7 +1832,8 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .events-for-erotic-massages.second-above-footer {
-  margin-bottom: 80px;
+  margin-bottom: 67px;
+  padding-bottom: 0;
 }
 
 .events-for-erotic-massages.second-above-footer .n_container {
@@ -2041,203 +2156,130 @@ body._touch .header .menu__list > li._active .menu__arrow {
 /* Footer */
 
 .footer {
-  background-color: #181818;
-}
-
-.footer__wrap-logo::after,
-.footer__item-title::after {
-  background: rgba(144, 145, 156, 0.5);
-  content: "";
-  display: block;
-  height: 1px;
-  margin: 12px 0 3px;
-  width: 100%;
-}
-
-.footer__items {
-  padding-bottom: 66px;
-  padding-top: 119px;
-  flex-wrap: wrap;
-}
-
-.footer__item {
-  width: 100%;
-}
-
-.footer__item:nth-child(5) {
-  margin-top: 31px;
-}
-
-.footer__item-wrap-title {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.footer__item-title {
-  font-size: 15.6px;
-  line-height: 24px;
-}
-
-.footer__item-wrap-text {
-  padding-top: 9px;
-}
-
-.footer__item-wrap-text p {
-  font-size: 14px;
-  line-height: 29px;
-}
-
-.footer__wrap-logo {
-  height: 100%;
-  margin-top: 4px;
-}
-
-.footer__wrap-logo::after {
-  margin-top: 15px;
-}
-
-.footer__logo {
-  color: #9690A2 !important;
-  font-size: 22.1879px;
-  font-weight: 700;
-  line-height: 22px;
-  letter-spacing: -0.01em;
-}
-
-.footer__text-above-form {
-  color: #FCFCFC;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: 0.01em;
-  margin: 17px 0 0;
-}
-
-.footer__text-under-form {
-  font-size: 12px;
-  line-height: 20px;
-  letter-spacing: 0.01em;
-  margin-top: 14px;
-}
-
-.footer__text-under-form a {
-  color: #56A4FF;
-  text-decoration: underline;
-}
-
-.footer__wrap-address,
-.footer__wrap-email,
-.footer__wrap-phone {
-  color: #FCFCFC;
-  display: table;
-  font-size: 15.6px;
-  line-height: 29px;
-}
-
-.footer__wrap-address {
-  font-style: normal;
-  margin-top: 12px;
-}
-
-.footer__wrap-item-menu {
-  padding-top: 8px;
-}
-
-.footer__wrap-social-links {
-  font-size: 16.8px;
-  line-height: 24px;
-  margin-top: 18px;
-}
-
-.footer__wrap-social-links .footer__social-link {
-  color: inherit;
-  font-weight: 700;
-}
-
-.footer__wrap-social-links .footer__social-link:not(:last-child)::after {
-  bottom: 2px;
-  color: #fff;
-  content: "/";
-  cursor: default;
-  margin: 0 1px 0 7px;
+  padding-bottom: 56px;
   position: relative;
 }
 
-.footer__wrap-copyright {
-  border-top: 1px solid rgba(144, 145, 156, 0.25);
-  padding-bottom: 32px;
-  padding-top: 34px;
+.footer__el {
+  bottom: 0;
+  position: absolute;
+  max-width: 60%;
+  z-index: -1;
 }
 
-.footer__wrap-copyright .menu-item {
-  color: #FCFCFC;
-  font-size: 17px;
-  line-height: 28px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+.footer__el.left {
+  left: 0;
 }
 
-.footer__wrap-copyright .menu-item a {
-  color: inherit;
-  font-size: inherit;
-  line-height: inherit;
+.footer__el.right {
+  right: 0;
+}
+
+.footer__columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__column:nth-child(1) {
+  flex: 0 0 240px;
+}
+
+.footer__column:nth-child(2),
+.footer__column:nth-child(3) {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer__column:nth-child(2) {
+  padding-top: 7px;
+  width: calc(78% - 240px - 208px);
+}
+
+.footer__column:nth-child(3) {
+  padding-top: 7px;
+  width: calc(61% - 240px - 208px);
+}
+
+.footer__column:nth-child(4) {
+  padding-top: 7px;
+  flex: 0 0 208px;
+}
+
+.footer__blockText {
+  padding-bottom: 22px;
+  padding-top: 20px;
+}
+
+.footer__blockText p {
+  font-size: 12px;
+  line-height: 17px;
 }
 
 .footer__copyright {
-  color: #FCFCFC;
-  font-size: 15.6px;
-  line-height: 26px;
+  font-size: 12px;
+  line-height: 17px;
 }
 
-.footer .menu__list {
-  list-style: none;
-}
-
-.footer .menu-item a {
-  font-size: 15.6px;
-  line-height: 29px;
-}
-
-.newsletter-form {
-  margin-top: 19px;
-}
-
-.newsletter-form .wrap-field-button {
-  align-items: center;
-  background-color: rgba(144, 145, 156, 0.08);
-  border-radius: 6px;
+.footer__nav-menu {
   display: flex;
-  height: 48px;
-  overflow: hidden;
 }
 
-.newsletter-form__field,
-.newsletter-form__submit {
-  background: none;
-  border: none;
-  height: 100%;
-  outline: none;
+.footer__nav-menu .menu__list {
+  list-style: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 114px;
 }
 
-.newsletter-form__field {
-  color: #60606B;
+.footer__nav-menu .menu-item {
   font-size: 14px;
-  line-height: 27px;
-  letter-spacing: 0.02em;
-  padding-left: 17px;
-  width: calc(100% - 70px);
+  line-height: 16px;
+  margin-bottom: 12px;
 }
 
-.newsletter-form__submit {
-  color: #FFF;
-  cursor: pointer;
-  font-size: 16.72px;
-  font-weight: 700;
-  line-height: 24px;
-  padding: 0 4px;
-  text-align: center;
-  min-width: 96px;
+.footer__block-social {
+  max-width: 100px;
+}
+
+.footer__block-social p {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.footer__block-social-wrap-icons {
+  display: flex;
+  margin-top: 11px;
+}
+
+.footer__block-social-wrap-icons a {
+  align-items: center;
+  background-color: #1A1A1A;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 30px;
+}
+
+.footer__contact-block {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 25px;
+}
+
+.footer__contact-block svg {
+  margin-right: 5px;
+}
+
+.footer__contact-block svg.svg-circle {
+  position: relative;
+  top: 2px;
+}
+
+.footer__contact-block-name {
+  font-style: normal;
+  margin-bottom: 6px;
 }
 
 /* Plyr video player */
@@ -2248,73 +2290,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .massage-today__items {
     margin-left: -11px;
     margin-right: -11px;
-  }
-
-  .footer__wrap-logo::after,
-  .footer__item-title::after {
-    margin: 16px 0 8px;
-  }
-
-  .footer__items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -20px;
-    margin-right: -20px;
-  }
-
-  .footer__item {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .footer__item:nth-child(2) {
-    width: calc(27% - 40px);
-  }
-
-  .footer__item:nth-child(3) {
-    width: calc(27% - 40px);
-  }
-
-  .footer__item:nth-child(4) {
-    width: calc(46% - 40px);
-  }
-
-  .footer__item:nth-child(5) {
-    width: calc(100% - 40px);
-  }
-
-  .footer__item-title {
-    margin-top: auto;
-  }
-
-  .footer__logo {
-    margin-top: auto;
-  }
-
-  .footer__text-above-form {
-    margin: 22px 0 12px;
-  }
-
-  .footer__wrap-address {
-    margin-top: 17px;
-  }
-
-  .footer__wrap-copyright .menu__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .footer__wrap-copyright .menu-item {
-    font-size: 15.6px;
-    line-height: 26px;
-    margin-left: 34px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-
-  .newsletter-form {
-    margin-top: 23px;
   }
 }
 
@@ -2336,7 +2311,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .events-for-erotic-massages.second-above-footer {
-    padding-bottom: 80px;
     padding-top: 16px;
   }
 
@@ -2411,60 +2385,35 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-left: 35px;
     width: calc(100% - 440px);
   }
+
+  .footer__nav-menu {
+    padding-left: 15%;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .first-screen__items {
+    display: flex;
+  }
+
+  .first-screen__item {
+    width: 50%;
+  }
+
+  .first-screen__item:nth-child(1) {
+    padding-right: 9%;
+  }
+
+  .first-screen__item:nth-child(2) {
+    padding-left: 10px;
+  }
+
   .massage-salon__button-prev {
     left: -92px;
   }
 
   .massage-salon__button-next {
     right: -92px;
-  }
-
-  .footer__item:nth-child(2) {
-    width: 180px;
-  }
-
-  .footer__item:nth-child(3) {
-    width: 180px;
-  }
-
-  .footer__item:nth-child(2),
-  .footer__item:nth-child(3) {
-    width: calc(20% - 40px);
-  }
-
-  .footer__item:nth-child(4),
-  .footer__item:nth-child(5) {
-    width: calc(30% - 40px);
-  }
-
-  .footer__item:nth-child(5) {
-    margin-top: 0;
-  }
-
-  .footer__wrap-copyright {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .footer__wrap-copyright .menu {
-    width: 55%;
-  }
-
-  .footer__wrap-copyright .menu__list {
-    justify-content: flex-end;
-  }
-
-  .footer__blockCopyright {
-    order: -1;
-    width: 35%;
-  }
-
-  .footer__wrap-bottom-menu {
-    width: 65%;
   }
 }
 
@@ -2650,39 +2599,13 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer__items {
-    flex-wrap: nowrap;
+@media screen and (min-width: 1281px) {
+  .first-screen__button-prev {
+    left: -61px;
   }
 
-  .footer__item:nth-child(1) {
-    width: calc(31% - 40px);
-  }
-
-  .footer__item:nth-child(2) {
-    padding-left: calc(3% + 3px);
-    width: 198px;
-  }
-
-  .footer__item:nth-child(3) {
-    padding-left: calc(2% + 6px);
-    width: 182px;
-  }
-
-  .footer__item:nth-child(4) {
-    padding-left: calc(2% + 6px);
-    width: 330px;
-  }
-
-  .footer__item:nth-child(5) {
-    padding-left: calc(3% - 4px);
-    width: calc(36% - 40px);
-  }
-
-  .footer__logo {
-    display: table;
-    max-width: 100px;
-    text-align: left;
+  .first-screen__button-next {
+    right: -61px;
   }
 }
 
@@ -2734,70 +2657,24 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media (max-width: 1220px) {
+  .first-screen__title {
+    font-size: calc(34px + 30 * ((100vw - 320px) / 900));
+  }
+
+  .first-screen__title {
+    line-height: calc(47px + 30 * ((100vw - 320px) / 900));
+  }
+
+  .first-screen__sliders .swiper-slide {
+    height: calc(180px + 184 * ((100vw - 320px) / 900));
+  }
+
   .massage-today__blockImaage {
     height: calc(240px + 148.18 * ((100vw - 320px) / 900));
   }
 
   .erotic-massage-in-prague__item:nth-child(1) {
     min-height: calc(325px + 175 * ((100vw - 320px) / 900));
-  }
-
-  .footer__items {
-    padding-bottom: calc(25px + 41 * ((100vw - 320px) / 900));
-  }
-
-  .footer__items {
-    padding-top: calc(60px + 59 * ((100vw - 320px) / 900));
-  }
-
-  .footer__item-wrap-text p {
-    line-height: calc(24px + 5 * ((100vw - 320px) / 900));
-  }
-
-  .footer__wrap-copyright {
-    padding-bottom: calc(25px + 7 * ((100vw - 320px) / 900));
-  }
-
-  .footer__wrap-copyright {
-    padding-top: calc(25px + 9 * ((100vw - 320px) / 900));
-  }
-}
-
-@media screen and (max-width: 1199.98px) {
-  .footer__item:nth-child(1) {
-    margin-bottom: 30px;
-  }
-
-  .footer__wrap-logo {
-    margin-top: 0;
-  }
-
-  .footer__wrap-logo {
-    text-transform: capitalize;
-    text-align: center;
-  }
-
-  .footer__wrap-logo::after {
-    margin-top: 45px;
-  }
-
-  .footer__logo {
-    font-size: 28px;
-    line-height: 36px;
-  }
-}
-
-@media screen and (max-width: 1199.98px) and (max-width: 1220px) {
-  .footer__wrap-logo::after {
-    margin-top: calc(25px + 20 * ((100vw - 320px) / 900));
-  }
-
-  .footer__logo {
-    font-size: calc(22px + 6 * ((100vw - 320px) / 900));
-  }
-
-  .footer__logo {
-    line-height: calc(28px + 8 * ((100vw - 320px) / 900));
   }
 }
 
@@ -2877,6 +2754,30 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   body._touch .header .menu__list > li._active .menu__sub-list {
     display: block;
+  }
+
+  .first-screen {
+    margin-top: 180px;
+  }
+
+  .first-screen__bg-blur {
+    top: -180px;
+  }
+
+  .first-screen__illustration {
+    top: -180px;
+  }
+
+  .footer__column:nth-child(3) {
+    width: calc(65% - 240px - 208px);
+  }
+
+  .footer__nav-menu {
+    flex-wrap: wrap;
+  }
+
+  .footer__nav-menu .menu__list {
+    width: 50%;
   }
 }
 
@@ -3002,8 +2903,8 @@ body._touch .header .menu__list > li._active .menu__arrow {
     height: calc(100vh - 90px);
     margin-top: 110px;
     padding-bottom: 70px;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 30px;
+    padding-right: 30px;
     overflow: auto;
   }
 
@@ -3121,20 +3022,13 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
-@media screen and (max-width: 1099.98px) and (max-width: 991.98px) {
-  .header .menu-topmenu-container {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-}
-
 @media screen and (max-width: 1099.98px) and (max-width: 720.98px) {
   .header .menu-topmenu-container {
-    height: calc(100vh - 75px);
+    height: calc(100vh - 120px);
     flex-wrap: wrap;
-    margin-top: 75px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 120px;
   }
 }
 
@@ -3151,6 +3045,21 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .header .menu__arrow {
     top: 3px;
+  }
+}
+
+@media screen and (max-width: 1024.98px) {
+  .footer__column:nth-child(2) {
+    padding-left: 7%;
+    width: calc(74% - 240px - 208px);
+  }
+
+  .footer__column:nth-child(3) {
+    width: calc(72% - 240px - 208px);
+  }
+
+  .footer__nav-menu .menu__list {
+    width: 100%;
   }
 }
 
@@ -3191,6 +3100,37 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: 13px;
   }
 
+  .first-screen__title {
+    text-align: center;
+  }
+
+  .first-screen__sub-title {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .first-screen__blockText {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+  }
+
+  .first-screen__wrap-buttons {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+  }
+
+  .first-screen__wrap-slider {
+    margin-top: 80px;
+  }
+
+  .first-screen__sliders .swiper-slide {
+    height: 465px;
+  }
+
   .events-for-erotic-massages__item-number {
     font-size: 17px;
     line-height: 21px;
@@ -3214,27 +3154,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .egoist-massage__title {
     max-width: 400px;
   }
+}
 
-  .footer__text-under-form br {
-    display: none;
-  }
-
-  .footer__wrap-item-menu .menu-item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-
-  .footer__wrap-copyright .menu-item:nth-child(1) {
-    margin-left: 0;
-  }
-
-  .footer__copyright {
-    margin-top: 32px;
-    text-align: center;
-  }
-
-  .footer__wrap-bottom-menu {
-    margin-top: 32px;
-    text-align: center;
+@media screen and (max-width: 991.98px) and (max-width: 1220px) {
+  .first-screen__sliders .swiper-slide {
+    height: calc(180px + 285 * ((100vw - 320px) / 900));
   }
 }
 
@@ -3247,6 +3171,47 @@ body._touch .header .menu__list > li._active .menu__arrow {
     height: 1260px;
     order: 1;
     margin-top: 40px;
+  }
+
+  .footer__column:nth-child(1) {
+    flex: 0 0 208px;
+  }
+
+  .footer__column:nth-child(2) {
+    order: 1;
+    margin-top: 35px;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .footer__column:nth-child(3) {
+    width: calc(100% - 208px - 208px);
+  }
+
+  .footer__copyright {
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  .footer__nav-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__nav-menu .menu__list {
+    display: flex;
+    margin-left: -5px;
+    margin-right: -5px;
+    width: auto;
+  }
+
+  .footer__nav-menu .menu-item {
+    margin: 8px;
+  }
+
+  .footer__block-social {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -3400,6 +3365,38 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: 110px;
   }
 
+  .first-screen {
+    padding-bottom: 50px;
+  }
+
+  .first-screen__sub-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .first-screen__blockText p {
+    line-height: 22px;
+  }
+
+  .first-screen__wrap-buttons a {
+    font-size: 12px;
+    min-width: 120px;
+  }
+
+  .first-screen__button-prev {
+    left: 10px;
+  }
+
+  .first-screen__button-prev svg {
+    bottom: 1px;
+    right: 1px;
+    position: relative;
+  }
+
+  .first-screen__button-next {
+    right: 10px;
+  }
+
   .events-for-erotic-massages {
     padding-bottom: 50px;
     padding-left: 20px;
@@ -3495,18 +3492,79 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (max-width: 640.98px) {
+  .first-screen__sliders .swiper-slide {
+    height: 740px;
+  }
+
   .massage-salon__small-sliders .swiper-slide {
     height: 190px;
+  }
+
+  .footer__column:nth-child(1) {
+    flex: 0 0 50%;
+    padding-right: 25px;
+  }
+
+  .footer__column:nth-child(2) {
+    margin-top: 50px;
+  }
+
+  .footer__column:nth-child(3) {
+    display: none;
+  }
+
+  .footer__column:nth-child(4) {
+    flex: 0 0 50%;
+    padding-left: 25px;
+  }
+
+  .footer__logo {
+    display: table;
+    margin: 0 auto 35px;
+    max-width: 120px;
+  }
+
+  .footer__logo img {
+    max-width: 120px;
+  }
+
+  .footer__blockText {
+    padding-top: 8px;
+  }
+
+  .footer__block-social {
+    margin-left: 0;
+  }
+
+  .footer__reservation-btn {
+    max-width: 170px;
   }
 }
 
 @media screen and (max-width: 640.98px) and (max-width: 1220px) {
+  .first-screen__sliders .swiper-slide {
+    height: calc(180px + 560 * ((100vw - 320px) / 900));
+  }
+
   .massage-salon__small-sliders .swiper-slide {
     height: calc(92px + 98 * ((100vw - 320px) / 900));
   }
 }
 
 @media screen and (max-width: 600.98px) {
+  .first-screen__button-prev,
+  .first-screen__button-next {
+    height: 33px;
+    min-width: 33px;
+    max-width: 33px;
+    padding: 0;
+  }
+
+  .first-screen__button-prev svg,
+  .first-screen__button-next svg {
+    max-height: 44%;
+  }
+
   .massage-salon__button-prev,
   .massage-salon__button-next {
     height: 33px;
@@ -3555,6 +3613,41 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: 85px;
   }
 
+  .first-screen {
+    margin-top: 120px;
+  }
+
+  .first-screen__bg-blur {
+    max-width: 100%;
+  }
+
+  .first-screen__illustration {
+    max-width: 50%;
+  }
+
+  .first-screen__wrap-slider {
+    margin-top: 60px;
+  }
+
+  .first-screen__slider-wrap-name {
+    height: 36px;
+  }
+
+  .first-screen__slider-btn {
+    bottom: 7%;
+    font-size: 11px;
+    height: 30px;
+    min-width: 80%;
+  }
+
+  .first-screen__button-prev {
+    left: -13px;
+  }
+
+  .first-screen__button-next {
+    right: -13px;
+  }
+
   .events-for-erotic-massages__item {
     padding-left: 5%;
     padding-right: 5%;
@@ -3573,55 +3666,50 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .massage-salon__small-sliders .swiper-slide {
     height: 382px;
   }
-
-  .footer__item:not(:last-child) {
-    margin-bottom: 33px;
-  }
-
-  .footer__item:nth-child(1) {
-    margin-bottom: 32px;
-  }
-
-  .footer__item:nth-child(1) .footer__item-wrap-title {
-    margin-top: 0;
-  }
-
-  .footer__item:nth-child(5) {
-    margin-top: 35px;
-  }
-
-  .footer__item-wrap-title {
-    margin-top: 50px;
-  }
-
-  .footer__wrap-social-links {
-    margin-top: 12px;
-  }
-
-  .footer__wrap-copyright {
-    padding-bottom: 35px;
-    padding-top: 6px;
-  }
-
-  .footer__wrap-copyright .menu__list {
-    margin-bottom: 60px;
-    margin-top: 60px;
-  }
-
-  .footer__copyright {
-    font-size: 14px;
-    line-height: 21px;
-  }
-
-  .footer .menu-item a {
-    font-size: 17px;
-    line-height: 30px;
-  }
 }
 
 @media screen and (max-width: 575.98px) and (max-width: 1220px) {
   .massage-salon__small-sliders .swiper-slide {
     height: calc(92px + 290 * ((100vw - 320px) / 900));
+  }
+}
+
+@media screen and (max-width: 540.98px) {
+  .footer__column:nth-child(1) {
+    flex: 0 0 100%;
+    padding-right: 0;
+  }
+
+  .footer__column:nth-child(4) {
+    flex: 0 0 100%;
+    padding-left: 0;
+  }
+
+  .footer__logo {
+    margin: 0 auto 15px;
+  }
+
+  .footer__blockText {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .footer__block-social {
+    margin-left: auto;
+  }
+
+  .footer__contact {
+    max-width: 210px;
+    margin: 25px auto 45px;
+    text-align: center;
+  }
+
+  .footer__reservation-btn {
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -3643,9 +3731,5 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .header__burger:hover .header__burger-line::after {
     width: 22px;
-  }
-
-  .footer__text-under-form a:hover {
-    text-decoration: none;
   }
 }
