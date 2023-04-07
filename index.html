@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20230407165221">
+   <link rel="stylesheet" href="css/style.min.css?_v=20230407165221">
+   <title>Úvod</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+   <div class="header__wrapper lock-padding">
+      <div id="header-container" class="header-container">
+         <div class="header__top">
+            <div class="n_container">
+               <a href="/" class="header__logo">
+                  <img class="custom-logo" src="images/svg/logo.svg" alt="logo">
+               </a>
+               <div data-da="menu-topmenu-container, first, 720" class="header__top-info">
+                  <div class="header__top-infoColumn">
+                     <p class="header__top-infoColumnName">Zavolejte nám</p>
+                     <a href="tel:+420720422753">
+                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#header-top-info-column-tel)">
+                              <path d="M12.223 8.937L10.5484 7.40191C9.95033 6.85367 8.93359 7.07299 8.69435 7.78568C8.51493 8.27913 7.91684 8.55325 7.37857 8.44358C6.1824 8.16946 4.56757 6.74402 4.26853 5.59271C4.0891 5.09927 4.44795 4.55102 4.98623 4.38657C5.76374 4.16727 6.00297 3.23526 5.40489 2.68702L3.73025 1.15193C3.25179 0.768163 2.53408 0.768163 2.11543 1.15193L0.979065 2.1936C-0.157295 3.29008 1.09868 6.19578 3.90968 8.77252C6.72067 11.3493 9.89052 12.5554 11.0867 11.4589L12.223 10.4173C12.6417 9.97866 12.6417 9.32077 12.223 8.937Z" fill="#11E3CA"/>
+                           </g>
+                           <defs>
+                              <clipPath id="header-top-info-column-tel">
+                                 <rect width="12" height="11" fill="white" transform="translate(0.549561 0.864105)"/>
+                              </clipPath>
+                           </defs>
+                        </svg>
+                        +420 720 422 753
+                     </a>
+                  </div>
+                  <div class="header__top-infoColumn">
+                     <address class="header__top-infoColumnName">Varsavska 27, Praha 2, Vinohrady</address>
+                     <p>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#header-top-info-column-clock)">
+                              <path d="M12.4993 2.91437C11.1772 1.59224 9.41933 0.864105 7.54956 0.864105C5.67979 0.864105 3.92192 1.59224 2.5998 2.91437C1.27767 4.23649 0.549561 5.99434 0.549561 7.86411C0.549561 9.73387 1.27767 11.4917 2.5998 12.8138C3.92192 14.1359 5.67979 14.8641 7.54956 14.8641C9.41933 14.8641 11.1772 14.136 12.4993 12.8138C13.8215 11.4917 14.5496 9.73387 14.5496 7.86411C14.5496 5.99434 13.8215 4.23646 12.4993 2.91437ZM7.54956 13.4901C4.44733 13.4901 1.92353 10.9663 1.92353 7.86411C1.92353 7.85902 1.92369 7.85399 1.92372 7.84896C1.92372 7.84767 1.92353 7.84644 1.92353 7.84516C1.92353 7.843 1.9238 7.84092 1.92386 7.83879C1.9375 4.77374 4.41449 2.28007 7.47311 2.23906C7.47951 2.23876 7.48585 2.2381 7.49233 2.2381C7.49621 2.2381 7.49999 2.23857 7.50384 2.23868C7.5191 2.23857 7.5343 2.2381 7.54959 2.2381C10.6518 2.2381 13.1756 4.76193 13.1756 7.86413C13.1756 10.9663 10.6518 13.4901 7.54956 13.4901Z" fill="#11E3CA"/>
+                              <path d="M11.8231 8.20207C11.5943 8.20207 11.4089 8.01663 11.4089 7.78787C11.4089 7.55911 11.5943 7.37367 11.8231 7.37367H12.3223C12.0878 5.07472 10.2234 3.25097 7.90653 3.07974V3.51437C7.90653 3.74313 7.72108 3.92857 7.49233 3.92857C7.26357 3.92857 7.07812 3.74313 7.07812 3.51437V3.08964C4.79558 3.31331 2.97741 5.14321 2.7717 7.4309H3.21883C3.44758 7.4309 3.63303 7.61634 3.63303 7.8451C3.63303 8.07386 3.44758 8.25931 3.21883 8.25931H2.76831C2.95876 10.5838 4.81338 12.4441 7.13538 12.6437V12.1186C7.13538 11.8898 7.32083 11.7044 7.54958 11.7044C7.77834 11.7044 7.96379 11.8898 7.96379 12.1186V12.6437C10.3048 12.4425 12.1707 10.5532 12.3352 8.20207H11.8231ZM9.2263 6.77314L7.84249 8.15698C7.76481 8.23467 7.65948 8.27831 7.54961 8.27831C7.43977 8.27831 7.33439 8.23467 7.25673 8.15698L4.84794 5.74819C4.68617 5.58645 4.68617 5.3242 4.84794 5.16243C5.00968 5.00067 5.27193 5.00067 5.4337 5.16243L7.54964 7.27835L8.6406 6.18739C8.80234 6.02562 9.06459 6.02562 9.22636 6.18739C9.38807 6.34912 9.38807 6.61141 9.2263 6.77314Z" fill="#11E3CA"/>
+                           </g>
+                           <defs>
+                              <clipPath id="header-top-info-column-clock">
+                                 <rect width="14" height="14" fill="white" transform="translate(0.549561 0.864105)"/>
+                              </clipPath>
+                           </defs>
+                        </svg>
+                        NONSTOP
+                     </p>
+                  </div>
+               </div>
+               <div class="header__top-wrap-buttons">
+                  <a class="header__top-reservation-btn n_btn" href="#">
+                     <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#top-reservation-svg)">
+                           <path d="M14.9892 0.664093V1.82736H16.3014L13.7415 4.25465C12.8353 3.32728 11.5716 2.7506 10.1756 2.7506C8.29775 2.7506 6.65915 3.79382 5.80831 5.33101C5.73543 5.32781 5.66217 5.32588 5.58847 5.32588C2.838 5.32588 0.600342 7.56354 0.600342 10.3141C0.600342 12.8678 2.52944 14.9791 5.00682 15.2681V16.8139H3.26539V17.9772H5.00689V19.6641H6.17016V17.9772H7.98767V16.8139H6.17016V15.268C7.80104 15.0778 9.19413 14.0979 9.9558 12.7217C10.0287 12.7249 10.1019 12.7269 10.1756 12.7269C12.9261 12.7269 15.1637 10.4892 15.1637 7.73874C15.1637 6.80406 14.9051 5.92876 14.456 5.18027L17.2362 2.54409V3.98887H18.3995V0.664093H14.9892ZM5.58855 14.1389C3.47951 14.1389 1.76368 12.4231 1.76368 10.314C1.76368 8.2871 3.34844 6.62375 5.34388 6.49717C5.2418 6.89424 5.18747 7.31023 5.18747 7.73874C5.18747 9.98252 6.67674 11.8848 8.71869 12.5096C8.026 13.4942 6.88122 14.1389 5.58855 14.1389ZM9.24182 11.4481C7.58269 11.0302 6.35077 9.52574 6.35077 7.73874C6.35077 7.34404 6.41089 6.96311 6.5224 6.60464C8.18153 7.02249 9.41345 8.52701 9.41345 10.314C9.41345 10.7087 9.35329 11.0896 9.24182 11.4481ZM10.4203 11.5555C10.5224 11.1584 10.5767 10.7425 10.5767 10.314C10.5767 8.0702 9.08744 6.1679 7.04554 5.54309C7.73822 4.5585 8.88304 3.9138 10.1757 3.9138C12.2847 3.9138 14.0006 5.62962 14.0006 7.7387C14.0005 9.76558 12.4157 11.429 10.4203 11.5555Z" fill="#11E3CA"/>
+                        </g>
+                        <defs>
+                        <clipPath id="top-reservation-svg">
+                           <rect width="19" height="19" fill="white" transform="translate(0 0.664093)"/>
+                        </clipPath>
+                        </defs>
+                     </svg>
+                     RESERVATION
+                  </a>
+                  <div data-da="main, last, 1099" class="header__top-select select">
+                     <div class="select__header">
+                        <span class="select__current">En</span>
+                        <div class="select__icon">
+                           <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.13037 1.02402L3.03747 2.93119L4.94464 1.02402" stroke="white"/>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="select__body">
+                        <div class="select__item current-lang">En</div>
+                        <div class="select__item">Fr</div>
+                        <div class="select__item">UK</div>
+                        <div class="select__item">GB</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="menu__icon">
+                  <span>Burger</span>
+               </div>
+            </div>
+         </div>
+         <div class="header__menu menu">
+            <div class="n_container">
+               <nav class="menu__body">
+                  <div class="menu-topmenu-container">
+                     <ul class="menu__list">
+                        <li class="menu-item current-menu-item current_page_item">
+                           <a class="menu__link" href="index.html">Úvod</a>
+                        </li>
+                        <li class="menu-item">
+                           <a class="menu__link" href="#">Masérky</a>
+                        </li>
+                        <li class="menu-item">
+                           <a class="menu__link" href="#">Masáže</a>
+                        </li>
+                        <li class="menu-item">
+                           <a class="menu__link" href="#">Rozvrh</a>
+                        </li>
+                        <!--- current-menu-item current_page_item -->
+                        <li class="menu-item">
+                           <a class="menu__link" href="#">Ceník</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children current-menu-item current_page_item">
+                           <a class="menu__link" href="#">Blog</a>
+                           <span class="menu__arrow">
+                              <svg width="10" height="10" viewBox="0 0 24 24">
+                                 <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
+                                    fill="currentColor" />
+                              </svg>
+                           </span>
+                           <ul class="menu__sub-list">
+                              <li class="menu-item">
+                                 <a class="menu__link" href="#">Sub menu 1</a>
+                              </li>
+                              <li class="menu-item">
+                                 <a class="menu__link" href="#">Sub menu 2</a>
+                              </li>
+                              <li class="menu-item current-menu-item current_page_item">
+                                 <a class="menu__link" href="#">Sub menu 3</a>
+                              </li>
+                              <li class="menu-item">
+                                 <a class="menu__link" href="#">Sub menu 4</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="menu-item">
+                           <a class="menu__link" href="#">Kontakty</a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+      <main class="main">
+         <section class="first-screen">
+            <div class="n_container">
+               
+            </div>
+         </section>
+         <section class="events-for-erotic-massages">
+            <div class="events-for-erotic-massages__wrap-container">
+               <div class="n_container">
+                  <div class="events-for-erotic-massages__bg wrap-image">
+                     <picture>
+                        <source srcset="images/events-for-erotic-massages-bg.webp" type="image/webp">
+                        <img class="n_object-fit" data-src="images/events-for-erotic-massages-bg.jpg"
+                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+                     </picture>
+                     <span class="sk-spinner-pulse sk-spinner"></span>
+                  </div>
+                  <h2 class="events-for-erotic-massages__title">Akce na erotické masáže</h2>
+                  <div class="events-for-erotic-massages__items">
+                     <div class="events-for-erotic-massages__item">
+                        <div class="events-for-erotic-massages__item-wrap-title eventsForEroticMassagesItemWrapTitleOne">
+                           <h3 class="events-for-erotic-massages__item-title">Masáž tělo na tělo</h3>
+                        </div>
+                        <div class="events-for-erotic-massages__item-blockText eventsForEroticMassagesItemBlockTextOne">
+                           <p>Nechte po sobě smyslně klouzat tělo nahé sexy masérky, která vás bude laskat svým vzrušujícím tělem a intimními partiemi.</p>
+                        </div>
+                        <p class="events-for-erotic-massages__item-number">1700 Kč</p>
+                     </div>
+                     <div class="events-for-erotic-massages__item">
+                        <div class="events-for-erotic-massages__item-wrap-title eventsForEroticMassagesItemWrapTitleOne">
+                           <h3 class="events-for-erotic-massages__item-title">Lingam masáž</h3>
+                        </div>
+                        <div class="events-for-erotic-massages__item-blockText eventsForEroticMassagesItemBlockTextOne">
+                           <p>Erotická masáž, jejímž cílem je hýčkat a laskat váš penis. Během masáže lingamu můžete prožít mnohonásobný orgasmus.</p>
+                        </div>
+                        <p class="events-for-erotic-massages__item-number">1700 Kč</p>
+                     </div>
+                     <div class="events-for-erotic-massages__item">
+                        <div class="events-for-erotic-massages__item-wrap-title eventsForEroticMassagesItemWrapTitleOne">
+                           <h3 class="events-for-erotic-massages__item-title">Pussycat masáž</h3>
+                        </div>
+                        <div class="events-for-erotic-massages__item-blockText eventsForEroticMassagesItemBlockTextOne">
+                           <p>Vychutnejte si Pussycat masáž, při které vás žhavá dívka masíruje svým vnadným tělem a která je zakončena masáží penisu v poloze 69.</p>
+                        </div>
+                        <p class="events-for-erotic-massages__item-number">1700 Kč</p>
+                     </div>
+                  </div>
+                  <a class="events-for-erotic-massages__btn n_btn" href="#">
+                     <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#events-for-erotic-massages-svg)">
+                           <path d="M14.9892 0.664093V1.82736H16.3014L13.7415 4.25465C12.8353 3.32728 11.5716 2.7506 10.1756 2.7506C8.29775 2.7506 6.65915 3.79382 5.80831 5.33101C5.73543 5.32781 5.66217 5.32588 5.58847 5.32588C2.838 5.32588 0.600342 7.56354 0.600342 10.3141C0.600342 12.8678 2.52944 14.9791 5.00682 15.2681V16.8139H3.26539V17.9772H5.00689V19.6641H6.17016V17.9772H7.98767V16.8139H6.17016V15.268C7.80104 15.0778 9.19413 14.0979 9.9558 12.7217C10.0287 12.7249 10.1019 12.7269 10.1756 12.7269C12.9261 12.7269 15.1637 10.4892 15.1637 7.73874C15.1637 6.80406 14.9051 5.92876 14.456 5.18027L17.2362 2.54409V3.98887H18.3995V0.664093H14.9892ZM5.58855 14.1389C3.47951 14.1389 1.76368 12.4231 1.76368 10.314C1.76368 8.2871 3.34844 6.62375 5.34388 6.49717C5.2418 6.89424 5.18747 7.31023 5.18747 7.73874C5.18747 9.98252 6.67674 11.8848 8.71869 12.5096C8.026 13.4942 6.88122 14.1389 5.58855 14.1389ZM9.24182 11.4481C7.58269 11.0302 6.35077 9.52574 6.35077 7.73874C6.35077 7.34404 6.41089 6.96311 6.5224 6.60464C8.18153 7.02249 9.41345 8.52701 9.41345 10.314C9.41345 10.7087 9.35329 11.0896 9.24182 11.4481ZM10.4203 11.5555C10.5224 11.1584 10.5767 10.7425 10.5767 10.314C10.5767 8.0702 9.08744 6.1679 7.04554 5.54309C7.73822 4.5585 8.88304 3.9138 10.1757 3.9138C12.2847 3.9138 14.0006 5.62962 14.0006 7.7387C14.0005 9.76558 12.4157 11.429 10.4203 11.5555Z" fill="#11E3CA"/>
+                        </g>
+                        <defs>
+                        <clipPath id="events-for-erotic-massages-svg">
+                           <rect width="19" height="19" fill="white" transform="translate(0 0.664093)"/>
+                        </clipPath>
+                        </defs>
+                     </svg>
+                     Objednat ONLINE
+                  </a>
+               </div>
+            </div>
+         </section>
+         <section class="massage-today">
+            <div class="n_container first-massage-today-container">
+               <div class="massage-today__wrap-title">
+                  <h2 class="massage-today__title n_sec-title">Dnes masíruje</h2>
+                  <a data-da="first-massage-today-container, last, 720" href="#" class="massage-today__btn n_btn">Všechny masáže</a>
+               </div>
+               <div class="massage-today__items">
+                  <div class="massage-today__item">
+                     <a href="#" class="massage-today__blockImaage wrap-image">
+                        <picture>
+                           <source srcset="images/massage-today-image.webp" type="image/webp">
+                           <img class="n_object-fit" data-src="images/massage-today-image.jpg"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+                        </picture>
+                        <span class="sk-spinner-pulse sk-spinner"></span>
+                     </a>
+                     <p class="massage-today__name">
+                        <a href="#">Girl name</a>
+                     </p>
+                  </div>
+                  <div class="massage-today__item">
+                     <div class="massage-today__blockImaage wrap-image">
+                        <picture>
+                           <source srcset="images/massage-today-image.webp" type="image/webp">
+                           <img class="n_object-fit" data-src="images/massage-today-image.jpg"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+                        </picture>
+                        <span class="sk-spinner-pulse sk-spinner"></span>
+                     </div>
+                     <p class="massage-today__name">
+                        <a href="#">Girl name</a>
+                     </p>
+                  </div>
+                  <div class="massage-today__item">
+                     <div class="massage-today__blockImaage wrap-image">
+                        <picture>
+                           <source srcset="images/massage-today-image.webp" type="image/webp">
+                           <img class="n_object-fit" data-src="images/massage-today-image.jpg"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+                        </picture>
+                        <span class="sk-spinner-pulse sk-spinner"></span>
+                     </div>
+                     <p class="massage-today__name">
+                        <a href="#">Girl name</a>
+                     </p>
+                  </div>
+                  <div class="massage-today__item">
+                     <div class="massage-today__blockImaage wrap-image">
+                        <picture>
+                           <source srcset="images/massage-today-image.webp" type="image/webp">
+                           <img class="n_object-fit" data-src="images/massage-today-image.jpg"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+                        </picture>
+                        <span class="sk-spinner-pulse sk-spinner"></span>
+                     </div>
+                     <p class="massage-today__name">
+                        <a href="#">Girl name</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="massage-today no-blur">
+            <div class="n_container second-massage-today-container">
+               <div class="massage-today__wrap-title">
+                  <h2 class="massage-today__title n_sec-title">Erotické masáže</h2>
+                  <a data-da="second-massage-today-container, last, 720" href="#" class="massage-today__btn n_btn">Všechny masáže</a>
+               </div>
+               <div class="massage-today__items">
+                  <div class="massage-today__item">
+                     <a href="#" class="massage-today__blockImaage wrap-image">
+                        <picture>
+                           <source srcset="images/erotic-massages-image-1.webp" type="image/webp">
+                           <img class="n_object-fit" data-src="images/erotic-massages-image-1.jpg"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+                        </picture>
+                        <span class="sk-spinner-pulse sk-spinner"></span>
+                     </a>
+                     <p class="massage-today__name">
+                        <a href="#">Girl name</a>
+                     </p>
+                     <p class="massage-today__number">1700 Kč</p>
+                  </div>
+                  <div class="massage-today__item">
+                     <div class="massage-today__blockImaage wrap-image">
+                        <picture>
+                           <source srcset="images/erotic-massages-image-2.webp" type="image/webp">
+                           <img class="n_object-fit" data-src="images/erotic-massages-image-2.jpg"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+                        </picture>
+                        <span class="sk-spinner-pulse sk-spinner"></span>
+                     </div>
+                     <p class="massage-today__name">
+                        <a href="#">Girl name</a>
+                     </p>
+                     <p class="massage-today__number">1700 Kč</p>
+                  </div>
+                  <div class="massage-today__item">
+                     <div class="massage-today__blockImaage wrap-image">
+                        <picture>
+                           <source srcset="images/erotic-massages-image-3.webp" type="image/webp">
+                           <img class="n_object-fit" data-src="images/erotic-massages-image-3.jpg"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+                        </picture>
+                        <span class="sk-spinner-pulse sk-spinner"></span>
+                     </div>
+                     <p class="massage-today__name">
+                        <a href="#">Girl name</a>
+                     </p>
+                     <p class="massage-today__number">1700 Kč</p>
+                  </div>
+                  <div class="massage-today__item">
+                     <div class="massage-today__blockImaage wrap-image">
+                        <picture>
+                           <source srcset="images/erotic-massages-image-4.webp" type="image/webp">
+                           <img class="n_object-fit" data-src="images/erotic-massages-image-4.jpg"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+                        </picture>
+                        <span class="sk-spinner-pulse sk-spinner"></span>
+                     </div>
+                     <p class="massage-today__name">
+                        <a href="#">Girl name</a>
+                     </p>
+                     <p class="massage-today__number">1700 Kč</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="erotic-massage-in-prague">
+            <div class="n_container">
+               <div class="erotic-massage-in-prague__items">
+                  <div class="erotic-massage-in-prague__item">
+                     <div class="erotic-massage-in-prague__blockImages wrap-image">
+                        <picture>
+                           <source srcset="images/erotic-massage-in-prague-image.webp" type="image/webp">
+                           <img class="n_object-fit" data-src="images/erotic-massage-in-prague-image.jpg"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+                        </picture>
+                        <span class="sk-spinner-pulse sk-spinner"></span>
+                     </div>
+                  </div>
+                  <div class="erotic-massage-in-prague__item">
+                     <div class="erotic-massage-in-prague-content">
+                        <h2 class="erotic-massage-in-prague__title n_sec-title">Erotic massage in Prague</h2>
+                        <div class="erotic-massage-in-prague__blockText">
+                           <p>Massage is the oldest form of therapy. It is described more than one hundred kinds of different massage techniques all over the world. Each of them has different cultural background, while many of them are more or less interrelated. Salon Rabbit Hall provides Classic Erotic Massage.Essentially, Erotic Massage is based on an outline of Classic Massage. It enhances function, aid in the healing process, decrease muscle reflex activity, promote relaxation and well-being but unlike it focuses chiefly on an intimate parts of the body, stimulating senses and inducing arousal. Erotic Massage can be also used as a form of sexual therapy or to encourage a libido.</p>
+                           <p>Our Erotic Massage allows mutual touches, full care of masseuse, shower / bath with her presence. We use hot oils, masseuse does massage fully naked, using her hands, breast, body to body technique.You can choose from different types of girls, duration of massage vary from 30 min till 5 hours. We can also arrange a package of your choice if you will discuss your requirements with us. If one girl is not enough – we offer 4 hands massage. Also, you can enjoy couple massage, which brings new dimension to any relation.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="">
+            <div class="n_container">
+               
+            </div>
+         </section>
+         <section class="egoist-massage">
+            <div class="n_container">
+               <div class="egoist-massage__bg wrap-image">
+                  <picture>
+                     <source srcset="images/egoist-massage-bg.webp" type="image/webp">
+                     <img class="n_object-fit" data-src="images/egoist-massage-bg.jpg"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+                  </picture>
+                  <span class="sk-spinner-pulse sk-spinner"></span>
+               </div>
+               <div class="egoist-massage__content">
+                  <h2 class="egoist-massage__title n_sec-title">EGOIST MASSAGE - erotická masáž v centru Prahy</h2>
+                  <div class="egoist-massage__blockText">
+                     <p>V našem luxusním masážním salonu EGOIST MASSAGE na vás čekají zkušené masérky a maséři, kteří nabízejí široké spektrum masáží – od relaxačních, až po ty erotické, které vám umožní prožít dosud nepoznanou rozkoš. A to vše za bezkonkurenční cenu! V EGOIST MASSAGE si můžete dopřát potěšení z doteků pro muže, pro ženy i pro páry, které by si rády zpestřily svůj milostný život. Samozřejmě nechybí ani nabídka lesbických a gay masáží.</p>
+                     <p>Každý z nás touží být hýčkán a rozmazlován a erotická masáž všechny tyto vaše touhy dokonale uspokojí. Krásná masérka, oděná ve svůdném erotickém prádle vás bude postupně masírovat teplými oleji a postupně se svlékat. Její zkušené prsty se budou dotýkat citlivých míst na vašem těle a pomalu stupňovat vaši rozkoš. Poté co se masérka svlékne, začne vás masírovat svými prsy a celým tělem, dráždit a laskat vaše intimní partie až k bouřlivému vyvrcholení, jaké jste možná v životě nepoznali.</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="faq">
+            <div class="n_container">
+               <h2 class="faq__title n_sec-title">FAQ</h2>
+               <div class="faq__items">
+                  <div class="faq__item">
+                     <div data-spollers data-one-spoller class="block first-block">
+                        <div class="block__item">
+                           <button tabindex="-1" type="button" data-spoller class="block__title n_btn _active">
+                              Question of interest
+                              <span class="block__title-circle">circle</span>
+                           </button>
+                           <div class="block__BlockText">
+                              <p>V našem luxusním masážním salonu EGOIST MASSAGE na vás čekají zkušené masérky a maséři, kteří nabízejí široké spektrum masáží – od relaxačních, až po ty erotické, které vám umožní prožít dosud nepoznanou rozkoš.</p>
+                           </div>
+                        </div>
+                        <div class="block__item">
+                           <button tabindex="-1" type="button" data-spoller class="block__title n_btn">
+                              Question of interest
+                              <span class="block__title-circle">circle</span>
+                           </button>
+                           <div class="block__BlockText">
+                              <p>V našem luxusním masážním salonu EGOIST MASSAGE na vás čekají zkušené masérky a maséři, kteří nabízejí široké spektrum masáží – od relaxačních, až po ty erotické, které vám umožní prožít dosud nepoznanou rozkoš.</p>
+                           </div>
+                        </div>
+                        <div class="block__item">
+                           <button tabindex="-1" type="button" data-spoller class="block__title n_btn">
+                              Question of interest
+                              <span class="block__title-circle">circle</span>
+                           </button>
+                           <div class="block__BlockText">
+                              <p>V našem luxusním masážním salonu EGOIST MASSAGE na vás čekají zkušené masérky a maséři, kteří nabízejí široké spektrum masáží – od relaxačních, až po ty erotické, které vám umožní prožít dosud nepoznanou rozkoš.</p>
+                           </div>
+                        </div>
+                        <div class="block__item">
+                           <button tabindex="-1" type="button" data-spoller class="block__title n_btn">
+                              Question of interest
+                              <span class="block__title-circle">circle</span>
+                           </button>
+                           <div class="block__BlockText">
+                              <p>V našem luxusním masážním salonu EGOIST MASSAGE na vás čekají zkušené masérky a maséři, kteří nabízejí široké spektrum masáží – od relaxačních, až po ty erotické, které vám umožní prožít dosud nepoznanou rozkoš.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="faq__item faq-second-item">
+                     <div data-spollers data-one-spoller class="block">
+                        <div data-da="first-block, last, 800" class="block__item">
+                           <button tabindex="-1" type="button" data-spoller class="block__title n_btn">
+                              Question of interest
+                              <span class="block__title-circle">circle</span>
+                           </button>
+                           <div class="block__BlockText">
+                              <p>V našem luxusním masážním salonu EGOIST MASSAGE na vás čekají zkušené masérky a maséři, kteří nabízejí široké spektrum masáží – od relaxačních, až po ty erotické, které vám umožní prožít dosud nepoznanou rozkoš.</p>
+                              <p>V našem luxusním masážním salonu EGOIST MASSAGE na vás čekají zkušené masérky a maséři, kteří nabízejí široké spektrum masáží – od relaxačních, až po ty erotické, které vám umožní prožít dosud nepoznanou rozkoš.</p>
+                           </div>
+                        </div>
+                        <div data-da="first-block, last, 800" class="block__item">
+                           <button tabindex="-1" type="button" data-spoller class="block__title n_btn">
+                              Question of interest
+                              <span class="block__title-circle">circle</span>
+                           </button>
+                           <div class="block__BlockText">
+                              <p>V našem luxusním masážním salonu EGOIST MASSAGE na vás čekají zkušené masérky a maséři, kteří nabízejí široké spektrum masáží – od relaxačních, až po ty erotické, které vám umožní prožít dosud nepoznanou rozkoš.</p>
+                           </div>
+                        </div>
+                        <div data-da="first-block, last, 800" class="block__item">
+                           <button tabindex="-1" type="button" data-spoller class="block__title n_btn">
+                              Question of interest
+                              <span class="block__title-circle">circle</span>
+                           </button>
+                           <div class="block__BlockText">
+                              <p>V našem luxusním masážním salonu EGOIST MASSAGE na vás čekají zkušené masérky a maséři, kteří nabízejí široké spektrum masáží – od relaxačních, až po ty erotické, které vám umožní prožít dosud nepoznanou rozkoš.</p>
+                           </div>
+                        </div>
+                        <div data-da="first-block, last, 800" class="block__item">
+                           <button tabindex="-1" type="button" data-spoller class="block__title n_btn">
+                              Question of interest
+                              <span class="block__title-circle">circle</span>
+                           </button>
+                           <div class="block__BlockText">
+                              <p>V našem luxusním masážním salonu EGOIST MASSAGE na vás čekají zkušené masérky a maséři, kteří nabízejí široké spektrum masáží – od relaxačních, až po ty erotické, které vám umožní prožít dosud nepoznanou rozkoš.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="events-for-erotic-massages second-above-footer">
+            <div class="events-for-erotic-massages__wrap-container">
+               <div class="n_container">
+                  <div class="events-for-erotic-massages__bg wrap-image">
+                     <picture>
+                        <source srcset="images/events-for-erotic-massages-bg.webp" type="image/webp">
+                        <img class="n_object-fit" data-src="images/events-for-erotic-massages-bg.jpg"
+                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+                     </picture>
+                     <span class="sk-spinner-pulse sk-spinner"></span>
+                  </div>
+                  <div class="events-for-erotic-massages__items">
+                     <div class="events-for-erotic-massages__item">
+                        <div class="events-for-erotic-massages__item-wrap-title eventsForEroticMassagesItemWrapTitle">
+                           <h3 class="events-for-erotic-massages__item-title">Zavolejte nám</h3>
+                        </div>
+                        <div class="events-for-erotic-massages__item-blockText eventsForEroticMassagesItemBlockText">
+                           <p>+420 000 000 000</p>
+                        </div>
+                        <a class="events-for-erotic-massages__btn n_btn" href="#">
+                           <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#events-for-erotic-massages-second-svg)">
+                                 <path d="M14.9892 0.664093V1.82736H16.3014L13.7415 4.25465C12.8353 3.32728 11.5716 2.7506 10.1756 2.7506C8.29775 2.7506 6.65915 3.79382 5.80831 5.33101C5.73543 5.32781 5.66217 5.32588 5.58847 5.32588C2.838 5.32588 0.600342 7.56354 0.600342 10.3141C0.600342 12.8678 2.52944 14.9791 5.00682 15.2681V16.8139H3.26539V17.9772H5.00689V19.6641H6.17016V17.9772H7.98767V16.8139H6.17016V15.268C7.80104 15.0778 9.19413 14.0979 9.9558 12.7217C10.0287 12.7249 10.1019 12.7269 10.1756 12.7269C12.9261 12.7269 15.1637 10.4892 15.1637 7.73874C15.1637 6.80406 14.9051 5.92876 14.456 5.18027L17.2362 2.54409V3.98887H18.3995V0.664093H14.9892ZM5.58855 14.1389C3.47951 14.1389 1.76368 12.4231 1.76368 10.314C1.76368 8.2871 3.34844 6.62375 5.34388 6.49717C5.2418 6.89424 5.18747 7.31023 5.18747 7.73874C5.18747 9.98252 6.67674 11.8848 8.71869 12.5096C8.026 13.4942 6.88122 14.1389 5.58855 14.1389ZM9.24182 11.4481C7.58269 11.0302 6.35077 9.52574 6.35077 7.73874C6.35077 7.34404 6.41089 6.96311 6.5224 6.60464C8.18153 7.02249 9.41345 8.52701 9.41345 10.314C9.41345 10.7087 9.35329 11.0896 9.24182 11.4481ZM10.4203 11.5555C10.5224 11.1584 10.5767 10.7425 10.5767 10.314C10.5767 8.0702 9.08744 6.1679 7.04554 5.54309C7.73822 4.5585 8.88304 3.9138 10.1757 3.9138C12.2847 3.9138 14.0006 5.62962 14.0006 7.7387C14.0005 9.76558 12.4157 11.429 10.4203 11.5555Z" fill="#11E3CA"/>
+                              </g>
+                              <defs>
+                              <clipPath id="events-for-erotic-massages-second-svg">
+                                 <rect width="19" height="19" fill="white" transform="translate(0 0.664093)"/>
+                              </clipPath>
+                              </defs>
+                           </svg>
+                           RESERVATION
+                        </a>
+                     </div>
+                     <div class="events-for-erotic-massages__item">
+                        <div class="events-for-erotic-massages__item-wrap-title eventsForEroticMassagesItemWrapTitle">
+                           <h3 class="events-for-erotic-massages__item-title">Adresa</h3>
+                        </div>
+                        <div class="events-for-erotic-massages__item-blockText eventsForEroticMassagesItemBlockText">
+                           <address>Praha, Vaclavske namesti 1</address>
+                        </div>
+                        <a class="events-for-erotic-massages__btn n_btn" href="#">
+                           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#events-for-erotic-massages-second-location-svg)">
+                                 <path d="M8.49585 0.837891C5.39404 0.837891 2.87085 3.36138 2.87085 6.46289C2.87085 10.6127 8.06067 15.5449 8.28163 15.753C8.34204 15.8095 8.41895 15.8379 8.49585 15.8379C8.57275 15.8379 8.64966 15.8095 8.7101 15.753C8.93103 15.5449 14.1208 10.6127 14.1208 6.46289C14.1208 3.36138 11.5977 0.837891 8.49585 0.837891ZM8.49585 9.5879C6.77281 9.5879 5.37084 8.18593 5.37084 6.46289C5.37084 4.73985 6.77284 3.33788 8.49585 3.33788C10.2189 3.33788 11.6209 4.73988 11.6209 6.46289C11.6209 8.1859 10.2189 9.5879 8.49585 9.5879Z" fill="#11E3CA"/>
+                              </g>
+                              <defs>
+                                 <clipPath id="events-for-erotic-massages-second-location-svg">
+                                    <rect width="15" height="15" fill="white" transform="translate(0.99585 0.837891)"/>
+                                 </clipPath>
+                              </defs>
+                           </svg>
+                           Ohodnoťte nás
+                        </a>
+                     </div>
+                     <div class="events-for-erotic-massages__item">
+                        <div class="events-for-erotic-massages__item-wrap-title eventsForEroticMassagesItemWrapTitle">
+                           <h3 class="events-for-erotic-massages__item-title">Navštěvujete nás pravidelně?</h3>
+                        </div>
+                        <div class="events-for-erotic-massages__item-blockText eventsForEroticMassagesItemBlockText">
+                           <address>Odměňujeme věrné hosty</address>
+                        </div>
+                        <a class="events-for-erotic-massages__btn n_btn" href="#">
+                           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#events-for-erotic-massages-second-location-second-svg)">
+                                 <path d="M8.49585 0.837891C5.39404 0.837891 2.87085 3.36138 2.87085 6.46289C2.87085 10.6127 8.06067 15.5449 8.28163 15.753C8.34204 15.8095 8.41895 15.8379 8.49585 15.8379C8.57275 15.8379 8.64966 15.8095 8.7101 15.753C8.93103 15.5449 14.1208 10.6127 14.1208 6.46289C14.1208 3.36138 11.5977 0.837891 8.49585 0.837891ZM8.49585 9.5879C6.77281 9.5879 5.37084 8.18593 5.37084 6.46289C5.37084 4.73985 6.77284 3.33788 8.49585 3.33788C10.2189 3.33788 11.6209 4.73988 11.6209 6.46289C11.6209 8.1859 10.2189 9.5879 8.49585 9.5879Z" fill="#11E3CA"/>
+                              </g>
+                              <defs>
+                                 <clipPath id="events-for-erotic-massages-second-location-second-svg">
+                                    <rect width="15" height="15" fill="white" transform="translate(0.99585 0.837891)"/>
+                                 </clipPath>
+                              </defs>
+                           </svg>
+                           Chci vlastní kartu
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+   <div class="n_container">
+      
+   </div>
+</footer>
+   </div>
+   <!--<script src="files/js/jquery-3.6.1.min.js?_v=20230407165221"></script>-->
+   <script src="js/script.min.js?_v=20230407165221"></script>
+   <!--<script src="files/swiper/js/swiper-bundle.min.js?_v=20230407165221"></script>
+   <script src="files/swiper/js/home-slider-archive-settings.js?_v=20230407165221"></script>-->
+</body>
+
+</html>
