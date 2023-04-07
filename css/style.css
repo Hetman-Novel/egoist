@@ -1876,6 +1876,85 @@ body._touch .header .menu__list > li._active .menu__arrow {
   margin-bottom: 32px;
 }
 
+.massage-salon {
+  padding-bottom: 31px;
+  padding-top: 130px;
+  position: relative;
+}
+
+.massage-salon__decoration {
+  left: 0;
+  position: absolute;
+  top: 63px;
+}
+
+.massage-salon__title {
+  max-width: 100%;
+  text-align: center;
+}
+
+.massage-salon__wrap-sliders {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 29px;
+  max-width: 728.85px;
+}
+
+.massage-salon__wrap-big-slider {
+  position: relative;
+}
+
+.massage-salon__big-sliders {
+  overflow: hidden;
+}
+
+.massage-salon__big-sliders .swiper-slide {
+  border-radius: 20px;
+  height: 487.06px;
+  overflow: hidden;
+}
+
+.massage-salon__small-sliders {
+  margin-top: 18px;
+  overflow: hidden;
+}
+
+.massage-salon__small-sliders .swiper-slide {
+  height: 76.15px;
+}
+
+.massage-salon__button-prev,
+.massage-salon__button-next {
+  height: 41px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  min-width: 41px;
+  max-width: 41px;
+  z-index: 2;
+}
+
+.massage-salon__button-prev svg,
+.massage-salon__button-next svg {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.massage-salon__button-prev {
+  left: 30px;
+}
+
+.massage-salon__button-next {
+  right: 30px;
+}
+
+.massage-salon__btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 184.68px;
+}
+
 .egoist-massage {
   margin-top: 80px;
   padding-bottom: 110px;
@@ -2311,15 +2390,15 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .faq__items {
     display: flex;
-    margin-left: -42.5px;
-    margin-right: -42.5px;
+    margin-left: -20px;
+    margin-right: -20px;
     margin-top: 54px;
   }
 
   .faq__item {
-    margin-left: 42.5px;
-    margin-right: 42.5px;
-    width: calc(50% - 85px);
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(50% - 40px);
   }
 }
 
@@ -2335,6 +2414,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (min-width: 992px) {
+  .massage-salon__button-prev {
+    left: -92px;
+  }
+
+  .massage-salon__button-next {
+    right: -92px;
+  }
+
   .footer__item:nth-child(2) {
     width: 180px;
   }
@@ -2398,6 +2485,17 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .egoist-massage__bg::after {
     background: url("../images/svg/egoist-massage-overlay.svg");
     background-size: cover;
+  }
+
+  .faq__items {
+    margin-left: -42.5px;
+    margin-right: -42.5px;
+  }
+
+  .faq__item {
+    margin-left: 42.5px;
+    margin-right: 42.5px;
+    width: calc(50% - 85px);
   }
 }
 
@@ -2700,6 +2798,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .footer__logo {
     line-height: calc(28px + 8 * ((100vw - 320px) / 900));
+  }
+}
+
+@media screen and (max-width: 1100.98px) {
+  .massage-salon__decoration {
+    max-width: 60%;
   }
 }
 
@@ -3099,6 +3203,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-top: 19px;
   }
 
+  .erotic-massage-in-prague {
+    padding-top: 60px;
+  }
+
+  .massage-salon {
+    padding-top: 50px;
+  }
+
   .egoist-massage__title {
     max-width: 400px;
   }
@@ -3185,6 +3297,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
     height: 730px;
   }
 
+  .massage-salon__big-sliders .swiper-slide {
+    height: 780px;
+  }
+
+  .massage-salon__small-sliders .swiper-slide {
+    height: 135px;
+  }
+
   .faq__items {
     margin-top: 35px;
   }
@@ -3193,6 +3313,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
 @media screen and (max-width: 800.98px) and (max-width: 1220px) {
   .massage-today__blockImaage {
     height: calc(170px + 560 * ((100vw - 320px) / 900));
+  }
+
+  .massage-salon__big-sliders .swiper-slide {
+    height: calc(190px + 590 * ((100vw - 320px) / 900));
+  }
+
+  .massage-salon__small-sliders .swiper-slide {
+    height: calc(92px + 43 * ((100vw - 320px) / 900));
   }
 }
 
@@ -3342,7 +3470,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-bottom: 20px;
   }
 
+  .massage-salon {
+    padding-top: 30px;
+  }
+
   .egoist-massage {
+    margin-top: 50px;
     padding-bottom: 70px;
     padding-top: 50px;
   }
@@ -3358,6 +3491,47 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .faq {
     padding-bottom: 50px;
     padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 640.98px) {
+  .massage-salon__small-sliders .swiper-slide {
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 640.98px) and (max-width: 1220px) {
+  .massage-salon__small-sliders .swiper-slide {
+    height: calc(92px + 98 * ((100vw - 320px) / 900));
+  }
+}
+
+@media screen and (max-width: 600.98px) {
+  .massage-salon__button-prev,
+  .massage-salon__button-next {
+    height: 33px;
+    min-width: 33px;
+    max-width: 33px;
+    padding: 0;
+  }
+
+  .massage-salon__button-prev svg,
+  .massage-salon__button-next svg {
+    max-height: 44%;
+  }
+
+  .massage-salon__button-prev {
+    left: 20px;
+  }
+
+  .massage-salon__button-prev svg {
+    bottom: 1px;
+    right: 1px;
+    position: relative;
+  }
+
+  .massage-salon__button-next {
+    right: 20px;
   }
 }
 
@@ -3394,6 +3568,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     font-size: 16px;
     line-height: 22px;
     margin-top: 12px;
+  }
+
+  .massage-salon__small-sliders .swiper-slide {
+    height: 382px;
   }
 
   .footer__item:not(:last-child) {
@@ -3438,6 +3616,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .footer .menu-item a {
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 575.98px) and (max-width: 1220px) {
+  .massage-salon__small-sliders .swiper-slide {
+    height: calc(92px + 290 * ((100vw - 320px) / 900));
   }
 }
 
