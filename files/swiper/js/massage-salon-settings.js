@@ -1,3 +1,9 @@
+/*
+if (document.querySelectorAll('.big-slider-slide').length > 1) {
+   document.getElementById('single-cemeteries-slider-navigation').classList.remove('hidden');
+}
+*/
+
 var swiper = new Swiper("#small-slider-massage-salon", {
    loop: true,
    spaceBetween: 7,
@@ -36,3 +42,8 @@ var swiper2 = new Swiper("#big-slider-massage-salon", {
       crossFade: true
    },
 });
+/*
+if (document.querySelectorAll('.big-slider-slide').length > 11) {
+   document.getElementById('single-cemeteries-number-slides-zero').remove();
+}
+*/
