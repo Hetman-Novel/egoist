@@ -502,57 +502,58 @@ body._lock {
   overflow: hidden;
 }
 
-/*.breadcrumbs {
-	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: 20px;
-	margin-top: 94px;
+.page__header {
+  padding-top: 97px;
+}
 
-	@include media-max-720 {
-		margin-bottom: 16px;
-		margin-top: 49px;
-	}
+.page__content {
+  margin-top: 38px;
+}
 
-	&__item {
-		font-size: 15.6px;
-		font-weight: 400;
-		line-height: 26px;
-		letter-spacing: 0.015em;
-		list-style: none;
-		position: relative;
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-top: 94px;
+}
 
-		@include media-max-720 {
-			font-size: 14px;
-			line-height: 22px;
-		}
+.breadcrumbs__item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  list-style: none;
+  position: relative;
+}
 
-		&:not(:last-child) {
+.breadcrumbs__item:not(:last-child)::after {
+  content: "/";
+  margin: 0 5px 0 3px;
+  position: relative;
+  width: 11px;
+}
 
-			&::after {
-				bottom: 1px;
-				content: "/";
-				margin: 0 6px 0 2px;
-				position: relative;
-				width: 11px;
-			}
-		}
-	}
-	&__link {
-		font-weight: 600;
-		//color: #000;
-		//transition: all 0.3s ease 0s;
+.breadcrumbs__link {
+  position: relative;
+}
 
-		@media (any-hover: hover) {
+.breadcrumbs__link::before {
+  background-color: #fff;
+  bottom: -1px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
 
-         &:hover {
-            //color: #666;
-         }
-      }
-	}
-	&__name {
-		color: #cbcbcb;
-	}
-}*/
+.page__title {
+  font-family: Oswald, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 71px;
+}
 
 .n_container {
   margin-left: auto;
@@ -585,12 +586,6 @@ h5,
 h6 {
   font-weight: 700;
 }
-
-/*.page__title {
-	@include adaptive-value("font-size", 70, 28, 1);
-	font-weight: 400;
-	@include adaptive-value("line-height", 84, 34, 1);
-}*/
 
 /*.page__text-under-title {
 	font-size: 24px;
@@ -1138,14 +1133,14 @@ h6 {
   width: 100%;
 }
 
-.wrap-image picture source,
-.wrap-image picture img,
+.wrap-image picture.loaded source,
+.wrap-image picture.loaded img,
 .wrap-image.loaded source,
 .wrap-image.loaded img {
   opacity: 1;
 }
 
-.wrap-image picture .sk-spinner,
+.wrap-image picture.loaded .sk-spinner,
 .wrap-image.loaded .sk-spinner {
   opacity: 0;
 }
@@ -2156,6 +2151,443 @@ body._touch .header .menu__list > li._active .menu__arrow {
   text-align: center;
 }
 
+/* Page - Blog */
+
+.page-blog {
+  padding-bottom: 118px;
+}
+
+.page-blog__items {
+  margin-top: 45px;
+}
+
+.page-blog__items::after {
+  background-color: rgba(255, 255, 255, 0.19);
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 31px;
+  width: 100%;
+}
+
+.page-blog__item {
+  margin-bottom: 38px;
+  position: relative;
+}
+
+.page-blog__item-title {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 18px;
+}
+
+.page-blog__item-blockDate {
+  align-items: center;
+  background-color: #11E3CA;
+  left: 8px;
+  height: 42.21px;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  position: absolute;
+  top: 8px;
+  width: 42.21px;
+  z-index: 2;
+}
+
+.page-blog__item-blockDate p {
+  color: #0B1D1B;
+  font-family: Oswald, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: center;
+}
+
+.page-blog__item-blockImage {
+  height: 220px;
+  display: block;
+}
+
+.page-blog__item-blockText {
+  padding-bottom: 18px;
+  padding-top: 10px;
+}
+
+.page-blog__item-blockText p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.page-blog__item-permalink {
+  color: #11E3CA;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+}
+
+.page-blog__wrap-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 33px;
+}
+
+.page-blog__wrap-navigation .screen-reader-text {
+  display: none;
+}
+
+.page-blog__wrap-navigation .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  counter-reset: page-numbers-zero;
+}
+
+.page-blog__wrap-navigation .page-numbers {
+  align-items: center;
+  background-color: #000;
+  box-shadow: 0 0px 28px rgba(17, 227, 202, 0.81);
+  border: 1px solid transparent;
+  border-radius: 64px;
+  display: flex;
+  justify-content: center;
+  height: 41px;
+  margin: 5px;
+  transition: 0.3s ease 0s;
+  width: 41px;
+}
+
+.page-blog__wrap-navigation .page-numbers:nth-child(1)::before,
+.page-blog__wrap-navigation .page-numbers:nth-child(2)::before,
+.page-blog__wrap-navigation .page-numbers:nth-child(3)::before,
+.page-blog__wrap-navigation .page-numbers:nth-child(4)::before,
+.page-blog__wrap-navigation .page-numbers:nth-child(5)::before {
+  content: counter(page-numbers-zero);
+}
+
+.page-blog__wrap-navigation .page-numbers svg {
+  transition: transform 0.3s ease 0s;
+}
+
+.page-blog__wrap-navigation .page-numbers.current,
+.page-blog__wrap-navigation .page-numbers.dots {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.page-blog__wrap-navigation .page-numbers.current {
+  border: 1px solid #11E3CA;
+  color: #11E3CA;
+}
+
+.page-blog__wrap-navigation .page-numbers.prev,
+.page-blog__wrap-navigation .page-numbers.next {
+  border: 1px solid #11E3CA;
+  font-size: 0;
+}
+
+.page-blog__wrap-navigation .page-numbers.prev svg,
+.page-blog__wrap-navigation .page-numbers.next svg {
+  position: relative;
+  z-index: 1;
+}
+
+.page-blog__wrap-navigation .page-numbers.prev {
+  padding-right: 2px;
+}
+
+.page-blog__wrap-navigation .page-numbers.next {
+  padding-left: 1px;
+}
+
+/* Page - single Blog */
+
+.page-single-blog {
+  padding-bottom: 104px;
+}
+
+.page-single-blog .page-blog__items::after {
+  display: none;
+}
+
+.entry-content {
+  padding-bottom: 129px;
+  /*
+  .wp-block-group {
+     float: left;
+     width: 50%;
+  }
+  .wp-block-image {
+
+     &.alignright {
+        float: right;
+        width: 50%;
+     }
+  }
+  */
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+  font-size: 24px;
+  line-height: 35px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.entry-content p {
+  line-height: 26px;
+  margin-bottom: 29px;
+}
+
+.entry-content ol,
+.entry-content ul {
+  margin-bottom: 17px;
+}
+
+.entry-content ol li,
+.entry-content ul li {
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+.entry-content ul li {
+  list-style: none;
+}
+
+.entry-content .wp-container-9.wp-block-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.entry-content .wp-container-9.wp-block-columns .wp-block-column {
+  width: 100%;
+}
+
+.entry-content .wp-container-9.wp-block-columns .wp-block-column img {
+  height: auto !important;
+  width: 100% !important;
+}
+
+/* Page - Price list */
+
+.page-pricelist__items {
+  margin-bottom: 275px;
+  margin-top: 39px;
+}
+
+.page-pricelist__item {
+  margin-bottom: 57px;
+}
+
+.page-pricelist__item-title {
+  font-size: 24px;
+  line-height: 35px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.page-pricelist__item-priceBlock {
+  border-radius: 20px;
+  border: 1px solid #11E3CA;
+  padding: 33px 47px 46px 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-pricelist__item-priceBlock_bg {
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1920px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.page-pricelist__item-priceBlock_bg::before {
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.page-pricelist__item-priceBlock_bg img {
+  filter: grayscale(1);
+}
+
+.page-pricelist__item-priceBlock.checked .page-pricelist__item-priceBlockTabButtons button:nth-child(1) {
+  border: 1px solid transparent;
+}
+
+.page-pricelist__item-priceBlock.checked .page-pricelist__item-priceBlockTabButtons button:nth-child(2) {
+  border: 1px solid #11E3CA;
+}
+
+.page-pricelist__item-priceBlock.checked .page-pricelist__item-priceBlockWrapRows .page-pricelist__item-priceBlockRows:nth-child(1) {
+  left: -110%;
+}
+
+.page-pricelist__item-priceBlock.checked .page-pricelist__item-priceBlockWrapRows .page-pricelist__item-priceBlockRows:nth-child(2) {
+  left: -100%;
+}
+
+.page-pricelist__item-priceBlockTabButtons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.page-pricelist__item-priceBlockTabButtons button {
+  background: rgba(36, 36, 36, 0.49);
+  border: 1px solid transparent;
+  border-radius: 7px;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 8px 10px;
+  transition: border 0.3s ease;
+  text-align: center;
+}
+
+.page-pricelist__item-priceBlockTabButtons button:nth-child(1) {
+  border: 1px solid #11E3CA;
+}
+
+.page-pricelist__item-priceBlockTabButtons button:hover {
+  border: 1px solid #11E3CA !important;
+}
+
+.page-pricelist__item-priceBlockWrapRows {
+  display: flex;
+  position: relative;
+}
+
+.page-pricelist__item-priceBlockRows {
+  position: relative;
+  transition: left 0.7s;
+  min-width: 100%;
+}
+
+.page-pricelist__item-priceBlockRows:nth-child(1) {
+  left: 0;
+}
+
+.page-pricelist__item-priceBlockRows:nth-child(2) {
+  left: 110%;
+}
+
+.page-pricelist__item-priceBlockRow {
+  background: rgba(36, 36, 36, 0.49);
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-pricelist__item-priceBlockRow:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.page-pricelist__item-priceBlockColumn {
+  font-size: 15px;
+  line-height: 19px;
+  padding: 15px 0;
+  width: 25%;
+}
+
+.page-pricelist__item-priceBlockColumn:first-child {
+  align-items: center;
+  background-color: #11E3CA;
+  border-radius: 7px 0px 0px 7px;
+  color: #0B0B0B;
+  display: flex;
+  font-family: Rubik, sans-serif;
+  font-weight: 600;
+  flex: 0 0 100px;
+  padding-left: 11px;
+  padding-right: 11px;
+  text-align: center;
+}
+
+.page-pricelist__item-priceBlockColumn:first-child img {
+  margin-right: 6px;
+}
+
+.page-pricelist__item-priceBlockColumn:nth-child(2) {
+  text-align: center;
+  width: 50%;
+}
+
+/* Page - Contact */
+
+.page__wrap-map {
+  height: 312.68px;
+  width: 100%;
+}
+
+.page__wrap-map iframe {
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.events-for-erotic-massages.second-above-footer {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.events-for-erotic-massages.second-above-footer.there-are-icons {
+  margin-top: 52px;
+}
+
+.events-for-erotic-massages.second-above-footer.there-are-icons .n_container {
+  padding-bottom: 18px;
+  padding-left: 20px;
+  padding-top: 18px;
+}
+
+.events-for-erotic-massages.second-above-footer.there-are-icons .events-for-erotic-massages__items {
+  max-width: 100%;
+}
+
+.events-for-erotic-massages__list {
+  list-style: none;
+  position: absolute;
+  right: 38px;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: 2;
+}
+
+.events-for-erotic-massages__listItem {
+  border-radius: 50%;
+  height: 41px;
+  margin: 12px 0;
+  padding: 1px;
+  overflow: hidden;
+  width: 41px;
+}
+
 /* Footer */
 
 .footer {
@@ -2294,6 +2726,39 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-left: -11px;
     margin-right: -11px;
   }
+
+  .page-blog__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10.265px;
+    margin-right: -10.265px;
+  }
+
+  .page-blog__items::after {
+    margin-left: 10.265px;
+    margin-right: 10.265px;
+  }
+
+  .page-blog__item {
+    margin-left: 10.265px;
+    margin-right: 10.265px;
+    width: calc(50% - 20.53px);
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .page-pricelist__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -11.24px;
+    margin-right: -11.24px;
+  }
+
+  .page-pricelist__item {
+    margin-left: 11.24px;
+    margin-right: 11.24px;
+    width: calc(50% - 22.48px);
+  }
 }
 
 @media screen and (min-width: 721px) {
@@ -2377,6 +2842,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-right: 20px;
     width: calc(50% - 40px);
   }
+
+  .events-for-erotic-massages.second-above-footer.there-are-icons .events-for-erotic-massages__items {
+    padding-right: 64px;
+  }
 }
 
 @media screen and (min-width: 961px) {
@@ -2387,6 +2856,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .erotic-massage-in-prague__item:nth-child(2) {
     padding-left: 35px;
     width: calc(100% - 440px);
+  }
+
+  .entry-content .wp-container-9.wp-block-columns .wp-block-column {
+    width: 50% !important;
+  }
+
+  .entry-content .wp-container-9.wp-block-columns .wp-block-column:nth-child(1) {
+    padding-right: 20px;
+  }
+
+  .entry-content .wp-container-9.wp-block-columns .wp-block-column:nth-child(2) {
+    padding-left: 15px;
   }
 
   .footer__nav-menu {
@@ -2417,6 +2898,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .massage-salon__button-next {
     right: -92px;
+  }
+
+  .page-blog__item {
+    width: calc(33.3333% - 20.53px);
   }
 }
 
@@ -2488,6 +2973,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media (min-width: 1100px) {
+  .header.n_scroll .menu {
+    background-color: #0A0A0A;
+    padding-bottom: 15px;
+  }
+
   .header .menu {
     border-top: 1px solid rgba(255, 255, 255, 0.19);
   }
@@ -2663,6 +3153,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
+@media screen and (max-width: 1366.98px) {
+  .page-pricelist__items {
+    margin-bottom: 150px;
+  }
+}
+
 @media (max-width: 1220px) {
   .first-screen__title {
     font-size: calc(34px + 30 * ((100vw - 320px) / 900));
@@ -2683,6 +3179,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .erotic-massage-in-prague__item:nth-child(1) {
     min-height: calc(325px + 175 * ((100vw - 320px) / 900));
   }
+
+  .page-blog__item-blockImage {
+    height: calc(76px + 144 * ((100vw - 320px) / 900));
+  }
 }
 
 @media screen and (max-width: 1100.98px) {
@@ -2692,6 +3192,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (max-width: 1099.98px) {
+  .page__header {
+    padding-top: 68px;
+  }
+
   .header__top {
     height: 90px;
   }
@@ -3085,6 +3589,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
     line-height: 22px;
   }
 
+  .page__title {
+    font-size: 32px;
+    line-height: 52px;
+  }
+
   .n_sec-title {
     font-size: 32px;
     line-height: 52px;
@@ -3170,11 +3679,23 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .egoist-massage__title {
     max-width: 400px;
   }
+
+  .page-blog__item-blockImage {
+    height: 330px;
+  }
+
+  .page-pricelist__items {
+    margin-bottom: 100px;
+  }
 }
 
 @media screen and (max-width: 991.98px) and (max-width: 1220px) {
   .first-screen__sliders .swiper-slide {
     height: calc(180px + 285 * ((100vw - 320px) / 900));
+  }
+
+  .page-blog__item-blockImage {
+    height: calc(76px + 254 * ((100vw - 320px) / 900));
   }
 }
 
@@ -3187,6 +3708,38 @@ body._touch .header .menu__list > li._active .menu__arrow {
     height: 1260px;
     order: 1;
     margin-top: 40px;
+  }
+
+  .entry-content {
+    padding-bottom: 80px;
+  }
+
+  .entry-content .wp-container-9.wp-block-columns .wp-block-column .wp-block-image {
+    margin-bottom: 29px;
+  }
+
+  .page-pricelist__item-priceBlock {
+    padding: 20px;
+  }
+
+  .page-pricelist__item-priceBlockTabButtons {
+    margin-bottom: 12px;
+  }
+
+  .page-pricelist__item-priceBlockTabButtons button {
+    padding: 6px 8px;
+  }
+
+  .page-pricelist__item-priceBlockColumn {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 12px 0;
+  }
+
+  .page-pricelist__item-priceBlockColumn:first-child {
+    flex: 0 0 95px;
+    padding-left: 8px;
+    padding-right: 5px;
   }
 
   .footer__column:nth-child(1) {
@@ -3234,6 +3787,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
 @media screen and (max-width: 960.98px) and (max-width: 1220px) {
   .erotic-massage-in-prague__item:nth-child(1) {
     height: calc(325px + 935 * ((100vw - 320px) / 900));
+  }
+}
+
+@media screen and (max-width: 960.98px) and (max-width: 720.98px) {
+  .entry-content .wp-container-9.wp-block-columns .wp-block-column .wp-block-image {
+    margin-bottom: 20px;
   }
 }
 
@@ -3289,6 +3848,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .faq__items {
     margin-top: 35px;
   }
+
+  .page-blog {
+    padding-bottom: 80px;
+  }
+
+  .events-for-erotic-massages__list {
+    right: 25px;
+  }
+
+  .events-for-erotic-massages__listItem {
+    margin: 32px 0;
+  }
 }
 
 @media screen and (max-width: 800.98px) and (max-width: 1220px) {
@@ -3306,6 +3877,20 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (max-width: 720.98px) {
+  .page__header {
+    padding-top: 50px;
+  }
+
+  .breadcrumbs {
+    margin-bottom: 16px;
+    margin-top: 49px;
+  }
+
+  .page__title {
+    font-size: 24px;
+    line-height: 44px;
+  }
+
   .n_container {
     padding-left: 20px;
     padding-right: 20px;
@@ -3517,6 +4102,45 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-bottom: 50px;
     padding-top: 50px;
   }
+
+  .page-blog__items {
+    margin-top: 20px;
+  }
+
+  .page-blog__wrap-navigation .nav-links {
+    justify-content: center;
+  }
+
+  .entry-content {
+    padding-bottom: 50px;
+  }
+
+  .entry-content h1,
+  .entry-content h2,
+  .entry-content h3,
+  .entry-content h4,
+  .entry-content h5,
+  .entry-content h6 {
+    font-size: 21px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+
+  .entry-content p {
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .entry-content ol li,
+  .entry-content ul li {
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  .page-pricelist__items {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 640.98px) {
@@ -3526,6 +4150,45 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .massage-salon__small-sliders .swiper-slide {
     height: 190px;
+  }
+
+  .page-blog__item-title {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .page-blog__item-blockDate {
+    height: 36px;
+    width: 36px;
+  }
+
+  .page-blog__item-blockDate p {
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  .page-blog__item-blockText {
+    padding-bottom: 10px;
+  }
+
+  .page-blog__item-blockText p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .page-blog__item-permalink {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .page-pricelist__items {
+    margin-bottom: 120px;
+  }
+
+  .page-pricelist__item-title {
+    font-size: 21px;
+    line-height: 32px;
+    margin-bottom: 18px;
   }
 
   .footer__column:nth-child(1) {
@@ -3694,15 +4357,46 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .massage-salon__small-sliders .swiper-slide {
     height: 382px;
   }
+
+  .page-blog__item-blockImage {
+    height: 680px;
+  }
 }
 
 @media screen and (max-width: 575.98px) and (max-width: 1220px) {
   .massage-salon__small-sliders .swiper-slide {
     height: calc(92px + 290 * ((100vw - 320px) / 900));
   }
+
+  .page-blog__item-blockImage {
+    height: calc(168px + 512 * ((100vw - 320px) / 900));
+  }
 }
 
 @media screen and (max-width: 540.98px) {
+  .events-for-erotic-massages.second-above-footer.there-are-icons .events-for-erotic-massages__items {
+    padding-bottom: 50px;
+  }
+
+  .events-for-erotic-massages__list {
+    bottom: 25px;
+    display: flex;
+    right: 50%;
+    top: auto;
+    transform: translateX(50%);
+  }
+
+  .events-for-erotic-massages__listItem {
+    height: 34px;
+    margin: 0 15px;
+    width: 34px;
+  }
+
+  .events-for-erotic-massages__listItem svg {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
   .footer__column:nth-child(1) {
     flex: 0 0 100%;
     padding-right: 0;
@@ -3751,7 +4445,28 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
+@media screen and (max-width: 400.98px) {
+  .page-pricelist__item-priceBlockColumn {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .page-pricelist__item-priceBlockColumn:first-child {
+    flex: 0 0 82px;
+  }
+
+  .page-pricelist__item-priceBlockColumn:first-child img {
+    height: 12px;
+    margin-right: 4px;
+    width: 12px;
+  }
+}
+
 @media (any-hover: hover) {
+  .breadcrumbs__link:hover::before {
+    background-color: #11E3CA;
+  }
+
   .hidden-link:hover,
   a:hover {
     color: #11E3CA;
@@ -3759,5 +4474,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .header__burger:hover .header__burger-line::after {
     width: 22px;
+  }
+
+  .page-blog__wrap-navigation .page-numbers:hover {
+    border: 1px solid #11E3CA;
+  }
+
+  .page-blog__wrap-navigation .page-numbers:hover.prev svg,
+  .page-blog__wrap-navigation .page-numbers:hover.next svg {
+    transform: scale(1.3);
   }
 }
