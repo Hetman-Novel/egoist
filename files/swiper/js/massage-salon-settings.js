@@ -16,10 +16,7 @@ var swiper = new Swiper("#small-slider-massage-salon", {
    watchSlidesProgress: true,
    slideToClickedSlide: false,
    breakpoints: {
-      576: {
-         slidesPerView: 3,
-      },
-      641: {
+      0: {
          slidesPerView: 4,
       },
       801: {

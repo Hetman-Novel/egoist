@@ -15,7 +15,7 @@ if (first_screen_slider) {
       //autoHeight: true,
 
       // Количество слайдов для показа
-      slidesPerView: 2,
+      slidesPerView: 1,
 
       // Отключение функционала
       // если слайдов меньше чем нужно
@@ -32,13 +32,13 @@ if (first_screen_slider) {
       parallax: true,
       breakpoints: {
          0: {
-            slidesPerView: 2,
+            slidesPerView: 1,
          },
          641: {
-            slidesPerView: 3,
+            slidesPerView: 2,
          },
          992: {
-            slidesPerView: 2,
+            slidesPerView: 1,
          }
       }
    });
