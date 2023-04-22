@@ -3047,6 +3047,94 @@ body._touch .header .menu__list > li._active .menu__arrow {
   line-height: 21px;
 }
 
+/* Page - Faq */
+
+.page-faq {
+  padding-bottom: 24px;
+}
+
+.page-faq .page__content {
+  position: relative;
+}
+
+.page-faq__illustration {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: -58px;
+  width: 100%;
+  z-index: -1;
+}
+
+.page-faq__illustration img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.page-faq .faq__items {
+  margin-top: 60px;
+}
+
+/* Page - Interior */
+
+.page-interior {
+  padding-bottom: 28px;
+}
+
+.page-interior .page__content {
+  position: relative;
+}
+
+.page-interior .page__title {
+  margin-bottom: 21px;
+}
+
+.page-interior__blockText p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.page-interior__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 44px;
+  margin-left: -10.425px;
+  margin-right: -10.425px;
+}
+
+.page-interior__item {
+  border-radius: 5px;
+  height: 220.96px;
+  margin-bottom: 19.24px;
+  margin-left: 10.425px;
+  margin-right: 10.425px;
+  overflow: hidden;
+}
+
+/* Page - Loyalty Card */
+
+.page-loyalty-card {
+  padding-bottom: 17px;
+}
+
+.page-loyalty-card .n_sec-title {
+  font-size: 48px;
+  line-height: 71px;
+}
+
+.page-loyalty-card .page__content {
+  position: relative;
+}
+
+.page-loyalty-card .page-faq__illustration {
+  top: -30px;
+}
+
+.page-loyalty-card .loyalty-card__items {
+  margin-top: 45px;
+}
+
 /* Footer */
 
 .footer {
@@ -3319,6 +3407,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .extra-services-massages__item.active {
     border: 1px solid #11E3CA;
   }
+
+  .page-interior__item {
+    margin-left: 10.425px;
+    margin-right: 10.425px;
+    width: calc(50% - 20.85px);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -3339,6 +3433,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .loyalty-card__blockImage {
     margin-left: 58px;
     margin-top: 27px;
+  }
+
+  .page-loyalty-card .loyalty-card__blockImage {
+    margin-top: -18px;
   }
 }
 
@@ -3469,6 +3567,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .entry-content .wp-container-9.wp-block-columns .wp-block-column:nth-child(2) {
     padding-left: 15px;
+  }
+
+  .page-interior__item {
+    width: calc(33.3333% - 20.85px);
   }
 
   .footer__wrap-menu {
@@ -3811,6 +3913,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .work-with-us__blockImage {
     height: calc(325px + 515 * ((100vw - 320px) / 900));
   }
+
+  .page-interior__item {
+    height: calc(65px + 155.96 * ((100vw - 320px) / 900));
+  }
 }
 
 @media screen and (max-width: 1200.98px) {
@@ -3958,6 +4064,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .massage-today__item-listItem:nth-child(even) {
     width: 42%;
+  }
+
+  .page-faq__illustration {
+    display: none;
   }
 
   .footer__column:nth-child(3) {
@@ -4432,6 +4542,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-right: 5px;
   }
 
+  .page-interior__item {
+    height: 330px;
+  }
+
   .footer__column:nth-child(1) {
     flex: 0 0 208px;
   }
@@ -4478,6 +4592,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 @media screen and (max-width: 960.98px) and (max-width: 1220px) {
   .erotic-massage-in-prague__blockImages {
     height: calc(325px + 935 * ((100vw - 320px) / 900));
+  }
+
+  .page-interior__item {
+    height: calc(88px + 242 * ((100vw - 320px) / 900));
   }
 }
 
@@ -4569,6 +4687,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .work-with-us__item:nth-child(1) {
     margin-bottom: 50px;
   }
+
+  .page-interior {
+    padding-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 800.98px) and (max-width: 1220px) {
@@ -4604,6 +4726,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-left: auto;
     margin-right: auto;
     max-width: 500px;
+  }
+
+  .page-loyalty-card .n_sec-title {
+    display: block;
+    margin-bottom: 40px;
   }
 }
 
@@ -5052,6 +5179,54 @@ body._touch .header .menu__list > li._active .menu__arrow {
     line-height: 27px;
     margin-bottom: 17px;
   }
+
+  .page-faq {
+    padding-bottom: 29px;
+  }
+
+  .page-faq .faq__items {
+    margin-top: 25px;
+  }
+
+  .page-interior {
+    margin-bottom: -20px;
+    padding-bottom: 0;
+  }
+
+  .page-interior .page__title {
+    line-height: 36px;
+    margin-bottom: 12px;
+    margin-top: 42px;
+  }
+
+  .page-interior__items {
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-top: 20px;
+  }
+
+  .page-interior__item {
+    height: 350px;
+    margin-bottom: 7px;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: calc(50% - 8px);
+  }
+
+  .page-loyalty-card {
+    padding-bottom: 27px;
+  }
+
+  .page-loyalty-card .n_sec-title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 720.98px) and (max-width: 1220px) {
+  .page-interior__item {
+    height: calc(88px + 262 * ((100vw - 320px) / 900));
+  }
 }
 
 @media screen and (max-width: 640.98px) {
@@ -5325,6 +5500,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .page-blog__item-blockImage {
     height: 680px;
+  }
+
+  .page-interior {
+    margin-bottom: 18px;
   }
 }
 
