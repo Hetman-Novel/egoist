@@ -3121,10 +3121,19 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .page-loyalty-card .n_sec-title {
   font-size: 48px;
   line-height: 71px;
+  margin-bottom: 15px;
 }
 
 .page-loyalty-card .page__content {
   position: relative;
+}
+
+.page-loyalty-card__bg {
+  left: 0;
+  max-width: 100%;
+  position: absolute;
+  top: -5px;
+  z-index: -1;
 }
 
 .page-loyalty-card .page-faq__illustration {
@@ -3133,6 +3142,276 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 .page-loyalty-card .loyalty-card__items {
   margin-top: 45px;
+}
+
+.page-loyalty-card .loyalty-card__item-block:nth-last-child(1) {
+  margin-top: 38px;
+}
+
+/* Page - Out call escort massage */
+
+.page-out-call-escort {
+  padding-bottom: 44px;
+}
+
+.page-out-call-escort .page__content {
+  position: relative;
+}
+
+.page-out-call-escort__illustration {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 102px;
+  width: 100%;
+  z-index: -1;
+}
+
+.page-out-call-escort__illustration img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.page-out-call-escort .n_sec-title {
+  max-width: 100%;
+  margin-bottom: 41px;
+}
+
+.page-out-call-escort__wrap-items {
+  position: relative;
+}
+
+.page-out-call-escort__blockMask {
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.page-out-call-escort__blockMask img {
+  bottom: 40%;
+  left: 0;
+  position: absolute;
+}
+
+.page-out-call-escort__item-block {
+  margin-bottom: 50px;
+}
+
+.page-out-call-escort__item-block h1,
+.page-out-call-escort__item-block h2,
+.page-out-call-escort__item-block h3,
+.page-out-call-escort__item-block h4,
+.page-out-call-escort__item-block h5,
+.page-out-call-escort__item-block h6 {
+  font-family: Oswald, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 22px;
+}
+
+.page-out-call-escort__item-block ol,
+.page-out-call-escort__item-block ul {
+  list-style-position: inside;
+}
+
+.page-out-call-escort__item-block ol li,
+.page-out-call-escort__item-block ul li {
+  color: #11E3CA;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.page-out-call-escort__item-block ol li:not(:last-child),
+.page-out-call-escort__item-block ul li:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+.page-out-call-escort__blockImage {
+  background-color: #D9D9D9;
+  border-radius: 20px;
+  height: 391.7px;
+}
+
+.page-out-call-escort__blockImage img {
+  border-radius: 18px;
+}
+
+.page-out-call-escort .page-pricelist__item {
+  margin: 44px 0 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.page-out-call-escort .page-pricelist__item-title {
+  font-family: Oswald, sans-serif;
+  margin-left: 0;
+  text-align: left;
+}
+
+.page-out-call-escort .page-pricelist__item-priceBlock {
+  border-radius: 0;
+  border: none;
+  margin-top: 28px;
+  padding: 0;
+  overflow: visible;
+}
+
+.page-out-call-escort .page-pricelist__item-priceBlockColumn:first-child {
+  font-size: 16px;
+  flex: 0 0 105px;
+}
+
+.page-out-call-escort .page-pricelist__item-priceBlockTabButtons button {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 8px 18px;
+}
+
+.page-out-call-escort__blockText p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.page-out-call-escort__blockText p:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.page-out-call-escort__blockText a {
+  color: #11E3CA;
+  display: table;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  margin-top: 20px;
+  text-decoration-line: underline;
+}
+
+.page-out-call-escort__blockInfo {
+  border-radius: 7px;
+  margin-top: 61px;
+  padding: 32px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-out-call-escort__blockInfo-content {
+  position: relative;
+  z-index: 3;
+}
+
+.page-out-call-escort__blockInfoBg {
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.page-out-call-escort__blockInfoBg::before {
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.page-out-call-escort__blockInfoBg img {
+  filter: grayscale(1);
+}
+
+.page-out-call-escort__blockInfo-blockText {
+  padding-bottom: 28px;
+  padding-top: 7px;
+}
+
+.page-out-call-escort__blockInfo-blockText p {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.page-out-call-escort__we-recommend {
+  margin-top: 50px;
+  padding-top: 41px;
+}
+
+.page-out-call-escort__we-recommend-title {
+  font-family: Oswald, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.page-out-call-escort__we-recommend-blockText {
+  text-align: center;
+}
+
+.page-out-call-escort__we-recommend-blockText p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.page-out-call-escort .massage-today {
+  padding-top: 184px;
+}
+
+.page-out-call-escort .massage-today .n_sec-title {
+  margin-bottom: 20px;
+}
+
+.page-out-call-escort .massage-today__item-content {
+  padding: 21px 21px 12px;
+}
+
+.page-out-call-escort .massage-today__wrap-title a {
+  bottom: -15px;
+  position: relative;
+}
+
+.other-massages__wrap-slider {
+  position: relative;
+}
+
+.other-massages__conteiner {
+  overflow: hidden;
+}
+
+.other-massages__button-prev,
+.other-massages__button-next {
+  height: 41px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  min-width: 41px;
+  max-width: 41px;
+  z-index: 2;
+}
+
+.other-massages__button-prev svg,
+.other-massages__button-next svg {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.other-massages__button-prev {
+  left: -20px;
+}
+
+.other-massages__button-next {
+  right: -20px;
 }
 
 /* Footer */
@@ -3413,6 +3692,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-right: 10.425px;
     width: calc(50% - 20.85px);
   }
+
+  .page-out-call-escort .massage-today__wrap-title a {
+    bottom: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -3544,6 +3827,35 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .work-with-us__blockImage {
     height: 615px;
     max-width: 560px;
+  }
+
+  .page-out-call-escort__items {
+    display: flex;
+    margin-left: -12.5px;
+    margin-right: -12.5px;
+  }
+
+  .page-out-call-escort__item {
+    margin-left: 12.5px;
+    margin-right: 12.5px;
+    width: calc(50% - 25px);
+  }
+
+  .page-out-call-escort__item:nth-child(1) {
+    order: 1;
+  }
+
+  .page-out-call-escort__blockImage {
+    border-radius: 22px;
+    margin-top: -8px;
+  }
+
+  .page-out-call-escort__blockImage img {
+    border-radius: 20px;
+  }
+
+  .page-out-call-escort__we-recommend {
+    border-top: 1px solid rgba(255, 255, 255, 0.19);
   }
 }
 
@@ -3830,6 +4142,24 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .first-screen__button-next {
     right: -61px;
   }
+
+  .other-massages__button-prev {
+    left: -60px;
+  }
+
+  .other-massages__button-next {
+    right: -60px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .other-massages__button-prev {
+    left: -81px;
+  }
+
+  .other-massages__button-next {
+    right: -81px;
+  }
 }
 
 @media screen and (min-width: 1580px) {
@@ -3916,6 +4246,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .page-interior__item {
     height: calc(65px + 155.96 * ((100vw - 320px) / 900));
+  }
+
+  .page-out-call-escort__blockImage {
+    height: calc(70px + 321.7 * ((100vw - 320px) / 900));
   }
 }
 
@@ -4068,6 +4402,26 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .page-faq__illustration {
     display: none;
+  }
+
+  .page-loyalty-card__bg {
+    display: none;
+  }
+
+  .page-out-call-escort {
+    padding-bottom: 20px;
+  }
+
+  .page-out-call-escort__illustration {
+    display: none;
+  }
+
+  .page-out-call-escort__blockMask {
+    display: none;
+  }
+
+  .page-out-call-escort .massage-today {
+    padding-top: 100px;
   }
 
   .footer__column:nth-child(3) {
@@ -4691,6 +5045,33 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .page-interior {
     padding-bottom: 20px;
   }
+
+  .page-out-call-escort__item-block:first-child {
+    margin-top: 40px;
+  }
+
+  .page-out-call-escort__blockImage {
+    height: 850px;
+  }
+
+  .page-out-call-escort .page-pricelist__item-title {
+    margin-bottom: 30px;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .page-out-call-escort .page-pricelist__item-priceBlockColumn {
+    padding-bottom: 15px;
+    padding-top: 16px;
+  }
+
+  .page-out-call-escort .page-pricelist__item-priceBlockTabButtons {
+    margin-bottom: 16px;
+  }
+
+  .page-out-call-escort__blockInfo {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800.98px) and (max-width: 1220px) {
@@ -4704,6 +5085,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .massage-salon__small-sliders .swiper-slide {
     height: calc(49px + 136 * ((100vw - 320px) / 900));
+  }
+
+  .page-out-call-escort__blockImage {
+    height: calc(185px + 665 * ((100vw - 320px) / 900));
   }
 }
 
@@ -5221,6 +5606,79 @@ body._touch .header .menu__list > li._active .menu__arrow {
     font-size: 24px;
     line-height: 36px;
   }
+
+  .page-out-call-escort {
+    padding-bottom: 8px;
+  }
+
+  .page-out-call-escort .n_sec-title {
+    margin-bottom: 29px;
+    margin-top: 42px;
+  }
+
+  .page-out-call-escort__item-block {
+    margin-bottom: 36px;
+  }
+
+  .page-out-call-escort__item-block ol li,
+  .page-out-call-escort__item-block ul li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .page-out-call-escort .page-pricelist__item {
+    margin-top: 63px;
+  }
+
+  .page-out-call-escort .page-pricelist__item-title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .page-out-call-escort .page-pricelist__item-priceBlockTabButtons button {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 7px 16px;
+  }
+
+  .page-out-call-escort__blockText p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .page-out-call-escort__blockText a {
+    margin-top: 26px;
+  }
+
+  .page-out-call-escort__we-recommend {
+    margin-top: 16px;
+  }
+
+  .page-out-call-escort .massage-today {
+    padding-top: 10px;
+  }
+
+  .page-out-call-escort .massage-today__item-content {
+    padding: 10px 13px 3px;
+  }
+
+  .page-out-call-escort .massage-today__wrap-title {
+    margin-bottom: 20px;
+  }
+
+  .other-massages__button-prev {
+    left: 10px;
+  }
+
+  .other-massages__button-prev svg {
+    bottom: 1px;
+    right: 1px;
+    position: relative;
+  }
+
+  .other-massages__button-next {
+    right: 10px;
+  }
 }
 
 @media screen and (max-width: 720.98px) and (max-width: 1220px) {
@@ -5435,6 +5893,19 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .massage-salon__button-next {
     right: -14px;
   }
+
+  .other-massages__button-prev,
+  .other-massages__button-next {
+    height: 33px;
+    min-width: 33px;
+    max-width: 33px;
+    padding: 0;
+  }
+
+  .other-massages__button-prev svg,
+  .other-massages__button-next svg {
+    max-height: 44%;
+  }
 }
 
 @media screen and (max-width: 575.98px) {
@@ -5504,6 +5975,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .page-interior {
     margin-bottom: 18px;
+  }
+
+  .other-massages__button-prev {
+    left: -13px;
+  }
+
+  .other-massages__button-next {
+    right: -13px;
   }
 }
 
