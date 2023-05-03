@@ -1831,7 +1831,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   display: flex;
   left: 0;
   height: 61px;
-  position: absolute;
+  position: fixed;
   right: 0;
   width: 100%;
   z-index: 1;
