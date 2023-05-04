@@ -1846,14 +1846,13 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .header__menu-bottom .column {
-  background-color: #1E1E1E;
-  border-top: 2px solid #494949;
+  background-color: #000;
   position: relative;
   width: 25%;
 }
 
 .header__menu-bottom .column:before {
-  background-color: #2B2B2B;
+  background-color: #696564;
   content: "";
   display: block;
   position: absolute;
@@ -1891,7 +1890,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .header__menu-bottom .column .branches-blockInfo {
-  background-color: #1E1E1E;
+  background-color: #000;
   border-radius: 10px;
   list-style: none;
   opacity: 0;
@@ -1907,7 +1906,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .header__menu-bottom .column .branches-blockInfo:before {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-top: 4px solid #fff;
+  border-top: 4px solid #696564;
   bottom: 3px;
   content: "";
   height: 0;
@@ -1920,12 +1919,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .header__menu-bottom .column .branches-blockInfo li {
+  color: #696564;
   font-size: 13px;
+  font-weight: 600;
   line-height: 16px;
 }
 
 .header__menu-bottom .column .branches-blockInfo li:not(:last-child) {
-  border-bottom: 1px solid #1a1a1a;
+  border-bottom: 1px solid #696564;
 }
 
 .header__menu-bottom .column .branches-blockInfo li a {
@@ -1934,8 +1935,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .header__menu-bottom .column.show-info {
-  background-color: #2D2D2D;
-  border-top: 2px solid #E2E2E2;
+  background-color: #0e0e0e;
 }
 
 .header__menu-bottom .column.show-info .branches-blockInfo {
@@ -1974,8 +1974,9 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .header__menu-bottom .column span {
-  color: #A8A8A8;
+  color: #696564;
   font-size: 11px;
+  font-weight: 600;
   text-align: center;
 }
 
