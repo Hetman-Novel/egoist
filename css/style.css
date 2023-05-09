@@ -3837,6 +3837,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   border: 1px solid #11E3CA;
   border-radius: 20px;
   margin-bottom: 50px;
+  overflow: hidden;
 }
 
 .page-profile__item-blockInfo.active-messages .content-information {
@@ -3894,11 +3895,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
   padding-top: 44px;
 }
 
-.page-profile__item-blockInfoColumn:nth-child(2) {
-  padding-bottom: 18px;
-  padding-top: 31px;
-}
-
 .page-profile__item-blockInfoColumn:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.19);
 }
@@ -3928,9 +3924,91 @@ body._touch .header .menu__list > li._active .menu__arrow {
   color: rgba(255, 255, 255, 0.4);
 }
 
+.page-profile__item-blockInfoColumnBlockText {
+  margin-top: 49px;
+  position: relative;
+}
+
+.page-profile__item-blockInfoColumnBlockText::before {
+  background-color: rgba(255, 255, 255, 0.19);
+  content: "";
+  display: block;
+  height: 1px;
+  left: -80px;
+  top: -31px;
+  position: absolute;
+  width: calc(100% + 160px);
+}
+
 .page-profile__item-blockInfoColumnBlockText p {
   font-size: 14px;
   line-height: 21px;
+}
+
+.page-profile__item-blockInfoColumn .title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  margin: 20px 0 23px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.page-profile__item-blockInfoColumn .title svg {
+  left: -18px;
+  position: absolute;
+  top: -17px;
+  width: 52px;
+}
+
+.page-profile__item-blockInfoColumnList li {
+  font-size: 16px !important;
+  line-height: 21px !important;
+  margin-bottom: 5px !important;
+  padding-left: 30px !important;
+  position: relative;
+  width: 100% !important;
+}
+
+.page-profile__item-blockInfoColumnList li.white a {
+  color: #fff;
+}
+
+.page-profile__item-blockInfoColumnList li svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.page-profile__item-blockInfoColumnList li svg.heart {
+  top: 2px;
+  width: 17px;
+}
+
+.page-profile__item-blockInfoColumnList li svg.check {
+  left: -5px;
+  top: -4px;
+  width: 28px;
+}
+
+.page-profile__item-blockInfoColumnList li svg.comment {
+  left: 0px;
+  top: 2px;
+  width: 17px;
+}
+
+.page-profile__item-blockInfoColumnList li svg.times {
+  left: 2px;
+  top: 5px;
+  width: 12px;
+}
+
+.page-profile__item-blockInfoColumnList li.active a {
+  color: #9e9e9e;
+}
+
+.page-profile__item-blockInfoColumnList li a {
+  color: #212121;
 }
 
 .page-profile__item-blockContact {
@@ -4322,6 +4400,22 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .popup__cookies-button.accept {
   box-shadow: 0px 0px 28px rgba(17, 227, 202, 0.81);
   margin-bottom: 15.31px;
+}
+
+@media screen and (min-width: 461px) {
+  .page-profile__item-blockInfoColumnList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .page-profile__item-blockInfoColumnList li {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 30px !important;
+    width: calc(50% - 20px) !important;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -5645,10 +5739,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .page-profile__item-blockInfoColumn {
     padding: 29px 25px;
-  }
-
-  .page-profile__item-blockInfoColumn:nth-child(2) {
-    padding-bottom: 16px;
   }
 
   .page-profile__reservation-btn {
@@ -7183,6 +7273,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-top: 48px;
   }
 
+  .page-profile__item-blockInfoColumn .title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 13px;
+  }
+
+  .page-profile__item-blockInfoColumnList li {
+    font-size: 15px !important;
+    line-height: 20px !important;
+    margin-bottom: 12px !important;
+  }
+
   .rewiews__items {
     margin-bottom: 29px;
   }
@@ -7345,5 +7447,9 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .page-blog__wrap-navigation .page-numbers:hover.prev svg,
   .page-blog__wrap-navigation .page-numbers:hover.next svg {
     transform: scale(1.3);
+  }
+
+  .page-profile__item-blockInfoColumnList li a:hover {
+    color: #9e9e9e;
   }
 }
