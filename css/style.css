@@ -4167,6 +4167,62 @@ body._touch .header .menu__list > li._active .menu__arrow {
   width: 73.49px !important;
 }
 
+.block-under-lists {
+  background-color: #131313;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 24px 20px 5px;
+  margin-top: 35px;
+}
+
+.block-under-lists ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+  max-width: 250px;
+}
+
+.block-under-lists ul li {
+  color: #fff;
+  font-size: 16px !important;
+  line-height: 18px;
+  margin-bottom: 20px;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  padding-left: 30px !important;
+  position: relative;
+  width: calc(50% - 20px) !important;
+}
+
+.block-under-lists ul li svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.block-under-lists ul li svg.heart {
+  left: -1px;
+  width: 18px;
+}
+
+.block-under-lists ul li svg.comment {
+  width: 17px;
+}
+
+.block-under-lists ul li svg.check {
+  left: -7px;
+  top: -8px;
+  width: 32px;
+}
+
+.block-under-lists ul li svg.times {
+  left: 3px;
+  top: 2px;
+  width: 12px;
+}
+
 .rewiews__item {
   background-color: #0A0A0A;
   border: 1px solid #11E3CA;
@@ -7283,6 +7339,15 @@ body._touch .header .menu__list > li._active .menu__arrow {
     font-size: 15px !important;
     line-height: 20px !important;
     margin-bottom: 12px !important;
+  }
+
+  .block-under-lists {
+    margin-top: 20px;
+  }
+
+  .block-under-lists ul li {
+    font-size: 14px !important;
+    line-height: 16px;
   }
 
   .rewiews__items {
