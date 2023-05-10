@@ -1842,7 +1842,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   position: fixed;
   right: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
 }
 
 .header__menu-bottom .column {
@@ -4885,6 +4885,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (min-width: 992px) {
+  .header__menu-bottom {
+    display: none;
+  }
+
   .first-screen__items {
     display: flex;
   }
@@ -5004,10 +5008,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
     pointer-events: all;
     transform: translate(0, 0);
     visibility: visible;
-  }
-
-  .header__menu-bottom {
-    display: none;
   }
 
   .events-for-erotic-massages {
@@ -5722,20 +5722,19 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 @media screen and (max-width: 1099.98px) and (max-width: 1099.98px) {
   .header .menu-topmenu-container {
-    height: calc(100vh - 197px);
-    margin-top: 197px;
-    padding-bottom: 140px;
+    height: calc(100vh - 190px);
+    margin-top: 190px;
     padding-top: 25px;
   }
 }
 
 @media screen and (max-width: 1099.98px) and (max-width: 720.98px) {
   .header .menu-topmenu-container {
-    height: calc(100vh - 187px);
+    height: calc(100vh - 186px);
     flex-wrap: wrap;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 187px;
+    margin-top: 186px;
   }
 }
 
@@ -5939,6 +5938,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .page-profile .egoist-massage__bg img {
     -o-object-position: 44% 0;
        object-position: 44% 0;
+  }
+
+  .footer {
+    padding-bottom: 100px;
   }
 }
 
@@ -7101,10 +7104,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .page-profile__small-slide {
     height: 96px !important;
     width: 72px !important;
-  }
-
-  .footer {
-    padding-bottom: 42px;
   }
 
   .footer__column:nth-child(1) {
